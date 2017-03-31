@@ -4,6 +4,11 @@ This repository provides a library for sending the events fired by a [PhET](http
 
 Open Sound Control message payloads are flat; there is no way to send named parameters, dictionaries, or objects within an OSC message. PhET events, however, represent changes within a hierarchical value space consisting both of user interface components and model properties. When binding PhET events to OSC, a message denotes a change to a single value within an object that is uniquely identified by the structure of the OSC message's address.
 
+## Important Links
+* Public [PhET.io Developer Guide](https://phet-io.colorado.edu/devguide/#documentation)
+* The [Open Sound Control 1.0 Specification](http://opensoundcontrol.org/spec-1_0)
+* [osc.js](https://github.com/colinbdclark/osc.js)
+
 ## Types of PhET Events
 * User: triggered by a user action
 * Model: a change in the simulation's sate
