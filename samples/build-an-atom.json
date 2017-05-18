@@ -1,0 +1,4311 @@
+[
+    {
+        "messageIndex": 0,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.sim",
+        "componentType": "TSim",
+        "event": "simStarted",
+        "time": 1495058789827,
+        "parameters": {
+            "sessionID": null,
+            "repoName": "build-an-atom",
+            "simName": "‪Build an Atom‬",
+            "simVersion": "1.4.0-phetiorc.2",
+            "simURL": "http://www.colorado.edu/physics/phet/dev/html/build-an-atom/1.4.0-phetiorc.2/build-an-atom_en-phetio.html?phetioStandalone&phetioLog=console",
+            "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+            "randomSeed": 0.1757073765576822,
+            "provider": "PhET Interactive Simulations, University of Colorado Boulder"
+        },
+        "children": [
+            {
+                "messageIndex": 1,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_0.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789979,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -172,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 2,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_0.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789979,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -172,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 3,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_1.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789984,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 4,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_1.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789984,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 5,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_2.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789986,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -132,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 6,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_2.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789986,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -132,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 7,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_3.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789987,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -112,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 8,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_3.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789987,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -112,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 9,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_4.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789988,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -92,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 10,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_4.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789988,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -92,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 11,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_5.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789989,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -162,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 12,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_5.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789989,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -162,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 13,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_6.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789991,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -142,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 14,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_6.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789991,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -142,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 15,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_7.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789992,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -122,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 16,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_7.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789992,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -122,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 17,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_8.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789993,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -102,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 18,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_8.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789993,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -102,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 19,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789994,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 20,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789994,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 21,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_0.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789995,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 22,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_0.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789995,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 23,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_1.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789996,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 24,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_1.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789996,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 25,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_2.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789996,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 26,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_2.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789996,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 27,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_3.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789997,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 28,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_3.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789997,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 29,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_4.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789999,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 30,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_4.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058789999,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 31,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_5.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790002,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 32,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_5.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790002,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 33,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_6.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790004,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 34,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_6.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790004,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 35,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_7.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790005,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 36,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_7.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790005,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 37,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_8.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790005,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 38,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_8.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790005,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 39,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_9.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790007,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 40,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_9.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790007,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 41,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_10.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790008,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 42,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_10.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790008,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 43,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_11.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790010,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 44,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_11.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790011,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 45,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_12.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790012,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -157.04
+                    }
+                }
+            },
+            {
+                "messageIndex": 46,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.neutrons_12.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790012,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -157.04
+                    }
+                }
+            },
+            {
+                "messageIndex": 47,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_0.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790015,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 100,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 48,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_0.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790015,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 100,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 49,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_1.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790017,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 50,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_1.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790017,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 51,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_2.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790019,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 132,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 52,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_2.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790019,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 132,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 53,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_3.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790020,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 148,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 54,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_3.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790020,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 148,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 55,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_4.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790022,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 164,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 56,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_4.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790022,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 164,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 57,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_5.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790034,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 108,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 58,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_5.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790034,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 108,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 59,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_6.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790037,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 124,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 60,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_6.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790037,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 124,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 61,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_7.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790038,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 140,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 62,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_7.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790038,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 140,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 63,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_8.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790040,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 156,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 64,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_8.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790040,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 156,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 65,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_9.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790041,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -180.488
+                    }
+                }
+            },
+            {
+                "messageIndex": 66,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.electrons_9.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790041,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -180.488
+                    }
+                }
+            },
+            {
+                "messageIndex": 67,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.view.chargeMeter.readoutText",
+                "componentType": "TText",
+                "event": "textChanged",
+                "time": 1495058790333,
+                "parameters": {
+                    "oldText": "",
+                    "newText": "0"
+                }
+            },
+            {
+                "messageIndex": 68,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.view.massNumberDisplay.numericalText",
+                "componentType": "TText",
+                "event": "textChanged",
+                "time": 1495058790346,
+                "parameters": {
+                    "oldText": " ",
+                    "newText": "0"
+                }
+            },
+            {
+                "messageIndex": 69,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_0.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790368,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -172,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 70,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_0.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790368,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -172,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 71,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_1.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790369,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 72,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_1.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790369,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 73,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_2.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790370,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -132,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 74,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_2.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790370,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -132,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 75,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_3.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790370,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -112,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 76,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_3.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790370,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -112,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 77,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_4.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790371,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -92,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 78,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_4.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790371,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -92,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 79,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_5.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790371,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -162,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 80,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_5.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790371,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -162,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 81,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_6.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790372,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -142,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 82,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_6.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790372,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -142,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 83,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_7.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790373,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -122,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 84,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_7.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790373,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -122,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 85,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_8.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790373,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -102,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 86,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_8.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790373,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -102,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 87,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_9.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790374,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 88,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.protons_9.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790374,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -152,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 89,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_0.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790375,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 90,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_0.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790375,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 91,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_1.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790376,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 92,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_1.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790376,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 93,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_2.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790376,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 94,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_2.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790376,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 95,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_3.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790377,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 96,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_3.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790377,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 97,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_4.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790378,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 98,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_4.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790378,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 40,
+                        "y": -209
+                    }
+                }
+            },
+            {
+                "messageIndex": 99,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_5.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790378,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 100,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_5.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790378,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 101,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_6.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790379,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 102,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_6.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790379,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 103,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_7.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790380,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 104,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_7.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790380,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 10,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 105,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_8.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790381,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 106,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_8.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790381,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 30,
+                        "y": -191.68
+                    }
+                }
+            },
+            {
+                "messageIndex": 107,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_9.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790382,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 108,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_9.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790382,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 109,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_10.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790383,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 110,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_10.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790383,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 0,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 111,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_11.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790383,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 112,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_11.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790383,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 20,
+                        "y": -174.36
+                    }
+                }
+            },
+            {
+                "messageIndex": 113,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_12.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790384,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -157.04
+                    }
+                }
+            },
+            {
+                "messageIndex": 114,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.neutrons_12.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790384,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": -10,
+                        "y": -157.04
+                    }
+                }
+            },
+            {
+                "messageIndex": 115,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_0.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790385,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 100,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 116,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_0.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790385,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 100,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 117,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_1.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790386,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 118,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_1.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790386,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 119,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_2.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790388,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 132,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 120,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_2.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790388,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 132,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 121,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_3.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790389,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 148,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 122,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_3.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790389,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 148,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 123,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_4.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790390,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 164,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 124,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_4.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790390,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 164,
+                        "y": -208.2
+                    }
+                }
+            },
+            {
+                "messageIndex": 125,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_5.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790391,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 108,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 126,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_5.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790391,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 108,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 127,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_6.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790392,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 124,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 128,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_6.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790392,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 124,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 129,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_7.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790393,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 140,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 130,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_7.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790394,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 140,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 131,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_8.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790396,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 156,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 132,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_8.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790396,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 156,
+                        "y": -194.344
+                    }
+                }
+            },
+            {
+                "messageIndex": 133,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_9.destinationProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790397,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -180.488
+                    }
+                }
+            },
+            {
+                "messageIndex": 134,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.symbolScreen.model.electrons_9.positionProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058790397,
+                "parameters": {
+                    "oldValue": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "newValue": {
+                        "x": 116,
+                        "y": -180.488
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "messageIndex": 135,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.homeScreen.view.atomScreenLargeButton",
+        "componentType": "TScreenButton",
+        "event": "fired",
+        "time": 1495058793779,
+        "children": [
+            {
+                "messageIndex": 136,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.sim.showHomeScreenProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058793779,
+                "parameters": {
+                    "oldValue": true,
+                    "newValue": false
+                }
+            }
+        ]
+    },
+    {
+        "messageIndex": 137,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragStarted",
+        "time": 1495058799369,
+        "parameters": {
+            "x": 402,
+            "y": 271
+        },
+        "children": [
+            {
+                "messageIndex": 138,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_9.userControlledProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058799369,
+                "parameters": {
+                    "oldValue": false,
+                    "newValue": true
+                }
+            }
+        ]
+    },
+    {
+        "messageIndex": 139,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799446,
+        "parameters": {
+            "oldValue": {
+                "x": -152,
+                "y": -174.36
+            },
+            "newValue": {
+                "x": -152,
+                "y": -172.96
+            }
+        }
+    },
+    {
+        "messageIndex": 140,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799446,
+        "parameters": {
+            "oldValue": {
+                "x": -152,
+                "y": -174.36
+            },
+            "newValue": {
+                "x": -152,
+                "y": -172.96
+            }
+        }
+    },
+    {
+        "messageIndex": 141,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799447,
+        "parameters": {
+            "x": 402,
+            "y": 270
+        }
+    },
+    {
+        "messageIndex": 142,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799453,
+        "parameters": {
+            "oldValue": {
+                "x": -152,
+                "y": -172.96
+            },
+            "newValue": {
+                "x": -149.2,
+                "y": -170.16
+            }
+        }
+    },
+  {
+        "messageIndex": 143,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799454,
+        "parameters": {
+            "oldValue": {
+                "x": -152,
+                "y": -172.96
+            },
+            "newValue": {
+                "x": -149.2,
+                "y": -170.16
+            }
+        }
+    },
+  {
+        "messageIndex": 144,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799454,
+        "parameters": {
+            "x": 404,
+            "y": 268
+        }
+    },
+  {
+        "messageIndex": 145,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799463,
+        "parameters": {
+            "oldValue": {
+                "x": -149.2,
+                "y": -170.16
+            },
+            "newValue": {
+                "x": -147.79999999999998,
+                "y": -165.96
+            }
+        }
+    },
+  {
+        "messageIndex": 146,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799463,
+        "parameters": {
+            "oldValue": {
+                "x": -149.2,
+                "y": -170.16
+            },
+            "newValue": {
+                "x": -147.79999999999998,
+                "y": -165.96
+            }
+        }
+    },
+  {
+        "messageIndex": 147,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799464,
+        "parameters": {
+            "x": 405,
+            "y": 265
+        }
+    },
+  {
+        "messageIndex": 148,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799472,
+        "parameters": {
+            "oldValue": {
+                "x": -147.79999999999998,
+                "y": -165.96
+            },
+            "newValue": {
+                "x": -143.6,
+                "y": -160.36
+            }
+        }
+    },
+  {
+        "messageIndex": 149,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799473,
+        "parameters": {
+            "oldValue": {
+                "x": -147.79999999999998,
+                "y": -165.96
+            },
+            "newValue": {
+                "x": -143.6,
+                "y": -160.36
+            }
+        }
+    },
+  {
+        "messageIndex": 150,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799474,
+        "parameters": {
+            "x": 408,
+            "y": 261
+        }
+    },
+  {
+        "messageIndex": 151,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799478,
+        "parameters": {
+            "oldValue": {
+                "x": -143.6,
+                "y": -160.36
+            },
+            "newValue": {
+                "x": -139.4,
+                "y": -154.76000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 152,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799479,
+        "parameters": {
+            "oldValue": {
+                "x": -143.6,
+                "y": -160.36
+            },
+            "newValue": {
+                "x": -139.4,
+                "y": -154.76000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 153,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799480,
+        "parameters": {
+            "x": 411,
+            "y": 257
+        }
+    },
+  {
+        "messageIndex": 154,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799493,
+        "parameters": {
+            "oldValue": {
+                "x": -139.4,
+                "y": -154.76000000000002
+            },
+            "newValue": {
+                "x": -135.20000000000002,
+                "y": -149.16000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 155,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799494,
+        "parameters": {
+            "oldValue": {
+                "x": -139.4,
+                "y": -154.76000000000002
+            },
+            "newValue": {
+                "x": -135.20000000000002,
+                "y": -149.16000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 156,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799494,
+        "parameters": {
+            "x": 414,
+            "y": 253
+        }
+    },
+  {
+        "messageIndex": 157,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799495,
+        "parameters": {
+            "oldValue": {
+                "x": -135.20000000000002,
+                "y": -149.16000000000003
+            },
+            "newValue": {
+                "x": -129.60000000000002,
+                "y": -142.16000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 158,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799496,
+        "parameters": {
+            "oldValue": {
+                "x": -135.20000000000002,
+                "y": -149.16000000000003
+            },
+            "newValue": {
+                "x": -129.60000000000002,
+                "y": -142.16000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 159,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799496,
+        "parameters": {
+            "x": 418,
+            "y": 248
+        }
+    },
+  {
+        "messageIndex": 160,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799508,
+        "parameters": {
+            "oldValue": {
+                "x": -129.60000000000002,
+                "y": -142.16000000000003
+            },
+            "newValue": {
+                "x": -124.00000000000003,
+                "y": -133.76000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 161,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799509,
+        "parameters": {
+            "oldValue": {
+                "x": -129.60000000000002,
+                "y": -142.16000000000003
+            },
+            "newValue": {
+                "x": -124.00000000000003,
+                "y": -133.76000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 162,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799510,
+        "parameters": {
+            "x": 422,
+            "y": 242
+        }
+    },
+  {
+        "messageIndex": 163,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799515,
+        "parameters": {
+            "oldValue": {
+                "x": -124.00000000000003,
+                "y": -133.76000000000002
+            },
+            "newValue": {
+                "x": -118.40000000000003,
+                "y": -125.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 164,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799518,
+        "parameters": {
+            "oldValue": {
+                "x": -124.00000000000003,
+                "y": -133.76000000000002
+            },
+            "newValue": {
+                "x": -118.40000000000003,
+                "y": -125.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 165,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799518,
+        "parameters": {
+            "x": 426,
+            "y": 236
+        }
+    },
+  {
+        "messageIndex": 166,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799522,
+        "parameters": {
+            "oldValue": {
+                "x": -118.40000000000003,
+                "y": -125.36000000000001
+            },
+            "newValue": {
+                "x": -111.40000000000003,
+                "y": -118.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 167,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799526,
+        "parameters": {
+            "oldValue": {
+                "x": -118.40000000000003,
+                "y": -125.36000000000001
+            },
+            "newValue": {
+                "x": -111.40000000000003,
+                "y": -118.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 168,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799527,
+        "parameters": {
+            "x": 431,
+            "y": 231
+        }
+    },
+  {
+        "messageIndex": 169,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799529,
+        "parameters": {
+            "oldValue": {
+                "x": -111.40000000000003,
+                "y": -118.36000000000001
+            },
+            "newValue": {
+                "x": -105.80000000000004,
+                "y": -111.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 170,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799530,
+        "parameters": {
+            "oldValue": {
+                "x": -111.40000000000003,
+                "y": -118.36000000000001
+            },
+            "newValue": {
+                "x": -105.80000000000004,
+                "y": -111.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 171,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799531,
+        "parameters": {
+            "x": 435,
+            "y": 226
+        }
+    },
+  {
+        "messageIndex": 172,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799539,
+        "parameters": {
+            "oldValue": {
+                "x": -105.80000000000004,
+                "y": -111.36000000000001
+            },
+            "newValue": {
+                "x": -101.60000000000004,
+                "y": -105.76000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 173,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799540,
+        "parameters": {
+            "oldValue": {
+                "x": -105.80000000000004,
+                "y": -111.36000000000001
+            },
+            "newValue": {
+                "x": -101.60000000000004,
+                "y": -105.76000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 174,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799542,
+        "parameters": {
+            "x": 438,
+            "y": 222
+        }
+    },
+  {
+        "messageIndex": 175,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799544,
+        "parameters": {
+            "oldValue": {
+                "x": -101.60000000000004,
+                "y": -105.76000000000002
+            },
+            "newValue": {
+                "x": -96.00000000000004,
+                "y": -100.16000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 176,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799545,
+        "parameters": {
+            "oldValue": {
+                "x": -101.60000000000004,
+                "y": -105.76000000000002
+            },
+            "newValue": {
+                "x": -96.00000000000004,
+                "y": -100.16000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 177,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799545,
+        "parameters": {
+            "x": 442,
+            "y": 218
+        }
+    },
+  {
+        "messageIndex": 178,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799555,
+        "parameters": {
+            "oldValue": {
+                "x": -96.00000000000004,
+                "y": -100.16000000000003
+            },
+            "newValue": {
+                "x": -91.80000000000004,
+                "y": -94.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 179,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799555,
+        "parameters": {
+            "oldValue": {
+                "x": -96.00000000000004,
+                "y": -100.16000000000003
+            },
+            "newValue": {
+                "x": -91.80000000000004,
+                "y": -94.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 180,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799556,
+        "parameters": {
+            "x": 445,
+            "y": 214
+        }
+    },
+  {
+        "messageIndex": 181,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799558,
+        "parameters": {
+            "oldValue": {
+                "x": -91.80000000000004,
+                "y": -94.56000000000003
+            },
+            "newValue": {
+                "x": -86.20000000000005,
+                "y": -90.36000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 182,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799558,
+        "parameters": {
+            "oldValue": {
+                "x": -91.80000000000004,
+                "y": -94.56000000000003
+            },
+            "newValue": {
+                "x": -86.20000000000005,
+                "y": -90.36000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 183,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799559,
+        "parameters": {
+            "x": 449,
+            "y": 211
+        }
+    },
+  {
+        "messageIndex": 184,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799567,
+        "parameters": {
+            "oldValue": {
+                "x": -86.20000000000005,
+                "y": -90.36000000000003
+            },
+            "newValue": {
+                "x": -82.00000000000004,
+                "y": -87.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 185,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799568,
+        "parameters": {
+            "oldValue": {
+                "x": -86.20000000000005,
+                "y": -90.36000000000003
+            },
+            "newValue": {
+                "x": -82.00000000000004,
+                "y": -87.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 186,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799569,
+        "parameters": {
+            "x": 452,
+            "y": 209
+        }
+    },
+  {
+        "messageIndex": 187,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799575,
+        "parameters": {
+            "oldValue": {
+                "x": -82.00000000000004,
+                "y": -87.56000000000003
+            },
+            "newValue": {
+                "x": -77.80000000000004,
+                "y": -84.76000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 188,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799576,
+        "parameters": {
+            "oldValue": {
+                "x": -82.00000000000004,
+                "y": -87.56000000000003
+            },
+            "newValue": {
+                "x": -77.80000000000004,
+                "y": -84.76000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 189,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799577,
+        "parameters": {
+            "x": 455,
+            "y": 207
+        }
+    },
+  {
+        "messageIndex": 190,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799591,
+        "parameters": {
+            "oldValue": {
+                "x": -77.80000000000004,
+                "y": -84.76000000000003
+            },
+            "newValue": {
+                "x": -69.40000000000003,
+                "y": -80.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 191,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799592,
+        "parameters": {
+            "oldValue": {
+                "x": -77.80000000000004,
+                "y": -84.76000000000003
+            },
+            "newValue": {
+                "x": -69.40000000000003,
+                "y": -80.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 192,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799592,
+        "parameters": {
+            "x": 461,
+            "y": 204
+        }
+    },
+  {
+        "messageIndex": 193,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799603,
+        "parameters": {
+            "oldValue": {
+                "x": -69.40000000000003,
+                "y": -80.56000000000003
+            },
+            "newValue": {
+                "x": -66.60000000000004,
+                "y": -80.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 194,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799604,
+        "parameters": {
+            "oldValue": {
+                "x": -69.40000000000003,
+                "y": -80.56000000000003
+            },
+            "newValue": {
+                "x": -66.60000000000004,
+                "y": -80.56000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 195,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799607,
+        "parameters": {
+            "x": 463,
+            "y": 204
+        }
+    },
+  {
+        "messageIndex": 196,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799608,
+        "parameters": {
+            "oldValue": {
+                "x": -66.60000000000004,
+                "y": -80.56000000000003
+            },
+            "newValue": {
+                "x": -61.000000000000036,
+                "y": -77.76000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 197,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799609,
+        "parameters": {
+            "oldValue": {
+                "x": -66.60000000000004,
+                "y": -80.56000000000003
+            },
+            "newValue": {
+                "x": -61.000000000000036,
+                "y": -77.76000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 198,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799609,
+        "parameters": {
+            "x": 467,
+            "y": 202
+        }
+    },
+  {
+        "messageIndex": 199,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799622,
+        "parameters": {
+            "oldValue": {
+                "x": -61.000000000000036,
+                "y": -77.76000000000003
+            },
+            "newValue": {
+                "x": -56.80000000000004,
+                "y": -77.76000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 200,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799623,
+        "parameters": {
+            "oldValue": {
+                "x": -61.000000000000036,
+                "y": -77.76000000000003
+            },
+            "newValue": {
+                "x": -56.80000000000004,
+                "y": -77.76000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 201,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799624,
+        "parameters": {
+            "x": 470,
+            "y": 202
+        }
+    },
+  {
+        "messageIndex": 202,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799625,
+        "parameters": {
+            "oldValue": {
+                "x": -56.80000000000004,
+                "y": -77.76000000000003
+            },
+            "newValue": {
+                "x": -55.40000000000004,
+                "y": -76.36000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 203,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799626,
+        "parameters": {
+            "oldValue": {
+                "x": -56.80000000000004,
+                "y": -77.76000000000003
+            },
+            "newValue": {
+                "x": -55.40000000000004,
+                "y": -76.36000000000003
+            }
+        }
+    },
+  {
+        "messageIndex": 204,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799626,
+        "parameters": {
+            "x": 471,
+            "y": 201
+        }
+    },
+  {
+        "messageIndex": 205,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799630,
+        "parameters": {
+            "oldValue": {
+                "x": -55.40000000000004,
+                "y": -76.36000000000003
+            },
+            "newValue": {
+                "x": -49.80000000000004,
+                "y": -74.96000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 206,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799632,
+        "parameters": {
+            "oldValue": {
+                "x": -55.40000000000004,
+                "y": -76.36000000000003
+            },
+            "newValue": {
+                "x": -49.80000000000004,
+                "y": -74.96000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 207,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799634,
+        "parameters": {
+            "x": 475,
+            "y": 200
+        }
+    },
+  {
+        "messageIndex": 208,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799639,
+        "parameters": {
+            "oldValue": {
+                "x": -49.80000000000004,
+                "y": -74.96000000000002
+            },
+            "newValue": {
+                "x": -45.60000000000004,
+                "y": -73.56000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 209,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799640,
+        "parameters": {
+            "oldValue": {
+                "x": -49.80000000000004,
+                "y": -74.96000000000002
+            },
+            "newValue": {
+                "x": -45.60000000000004,
+                "y": -73.56000000000002
+            }
+        }
+    },
+  {
+        "messageIndex": 210,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799641,
+        "parameters": {
+            "x": 478,
+            "y": 199
+        }
+    },
+  {
+        "messageIndex": 211,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799647,
+        "parameters": {
+            "oldValue": {
+                "x": -45.60000000000004,
+                "y": -73.56000000000002
+            },
+            "newValue": {
+                "x": -41.400000000000034,
+                "y": -72.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 212,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799647,
+        "parameters": {
+            "oldValue": {
+                "x": -45.60000000000004,
+                "y": -73.56000000000002
+            },
+            "newValue": {
+                "x": -41.400000000000034,
+                "y": -72.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 213,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799649,
+        "parameters": {
+            "x": 481,
+            "y": 198
+        }
+    },
+  {
+        "messageIndex": 214,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799655,
+        "parameters": {
+            "oldValue": {
+                "x": -41.400000000000034,
+                "y": -72.16000000000001
+            },
+            "newValue": {
+                "x": -37.20000000000003,
+                "y": -69.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 215,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799655,
+        "parameters": {
+            "oldValue": {
+                "x": -41.400000000000034,
+                "y": -72.16000000000001
+            },
+            "newValue": {
+                "x": -37.20000000000003,
+                "y": -69.36000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 216,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799656,
+        "parameters": {
+            "x": 484,
+            "y": 196
+        }
+    },
+  {
+        "messageIndex": 217,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799662,
+        "parameters": {
+            "oldValue": {
+                "x": -37.20000000000003,
+                "y": -69.36000000000001
+            },
+            "newValue": {
+                "x": -33.00000000000003,
+                "y": -65.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 218,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799662,
+        "parameters": {
+            "oldValue": {
+                "x": -37.20000000000003,
+                "y": -69.36000000000001
+            },
+            "newValue": {
+                "x": -33.00000000000003,
+                "y": -65.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 219,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799663,
+        "parameters": {
+            "x": 487,
+            "y": 193
+        }
+    },
+  {
+        "messageIndex": 220,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799671,
+        "parameters": {
+            "oldValue": {
+                "x": -33.00000000000003,
+                "y": -65.16000000000001
+            },
+            "newValue": {
+                "x": -24.60000000000003,
+                "y": -58.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 221,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799672,
+        "parameters": {
+            "oldValue": {
+                "x": -33.00000000000003,
+                "y": -65.16000000000001
+            },
+            "newValue": {
+                "x": -24.60000000000003,
+                "y": -58.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 222,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799673,
+        "parameters": {
+            "x": 493,
+            "y": 188
+        }
+    },
+  {
+        "messageIndex": 223,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799678,
+        "parameters": {
+            "oldValue": {
+                "x": -24.60000000000003,
+                "y": -58.16000000000001
+            },
+            "newValue": {
+                "x": -19.00000000000003,
+                "y": -51.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 224,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799679,
+        "parameters": {
+            "oldValue": {
+                "x": -24.60000000000003,
+                "y": -58.16000000000001
+            },
+            "newValue": {
+                "x": -19.00000000000003,
+                "y": -51.16000000000001
+            }
+        }
+    },
+  {
+        "messageIndex": 225,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799679,
+        "parameters": {
+            "x": 497,
+            "y": 183
+        }
+    },
+  {
+        "messageIndex": 226,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799686,
+        "parameters": {
+            "oldValue": {
+                "x": -19.00000000000003,
+                "y": -51.16000000000001
+            },
+            "newValue": {
+                "x": -9.20000000000003,
+                "y": -41.360000000000014
+            }
+        }
+    },
+  {
+        "messageIndex": 227,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799687,
+        "parameters": {
+            "oldValue": {
+                "x": -19.00000000000003,
+                "y": -51.16000000000001
+            },
+            "newValue": {
+                "x": -9.20000000000003,
+                "y": -41.360000000000014
+            }
+        }
+    },
+    {
+        "messageIndex": 228,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragged",
+        "time": 1495058799687,
+        "parameters": {
+            "x": 504,
+            "y": 176
+        }
+    },
+    {
+        "messageIndex": 229,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragEnded",
+        "time": 1495058799750,
+        "children": [
+            {
+                "messageIndex": 230,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_9.userControlledProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058799751,
+                "parameters": {
+                    "oldValue": true,
+                    "newValue": false
+                },
+                "children": [
+                    {
+                        "messageIndex": 231,
+                        "eventType": "model",
+                        "phetioID": "buildAnAtom.atomScreen.model.particleAtom.protonCountProperty",
+                        "componentType": "TDerivedProperty",
+                        "event": "changed",
+                        "time": 1495058799751,
+                        "parameters": {
+                            "oldValue": 0,
+                            "newValue": 1
+                        },
+                        "children": [
+                            {
+                                "messageIndex": 232,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.model.particleAtom.chargeProperty",
+                                "componentType": "TDerivedProperty",
+                                "event": "changed",
+                                "time": 1495058799751,
+                                "parameters": {
+                                    "oldValue": 0,
+                                    "newValue": 1
+                                },
+                                "children": [
+                                    {
+                                        "messageIndex": 233,
+                                        "eventType": "model",
+                                        "phetioID": "buildAnAtom.atomScreen.view.chargeMeter.readoutText",
+                                        "componentType": "TText",
+                                        "event": "textChanged",
+                                        "time": 1495058799751,
+                                        "parameters": {
+                                            "oldText": "0",
+                                            "newText": "+1"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "messageIndex": 234,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.model.particleAtom.massNumberProperty",
+                                "componentType": "TDerivedProperty",
+                                "event": "changed",
+                                "time": 1495058799752,
+                                "parameters": {
+                                    "oldValue": 0,
+                                    "newValue": 1
+                                },
+                                "children": [
+                                    {
+                                        "messageIndex": 235,
+                                        "eventType": "model",
+                                        "phetioID": "buildAnAtom.atomScreen.view.massNumberDisplay.numericalText",
+                                        "componentType": "TText",
+                                        "event": "textChanged",
+                                        "time": 1495058799752,
+                                        "parameters": {
+                                            "oldText": "0",
+                                            "newText": "1"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "messageIndex": 236,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.model.particleAtom.particleCountProperty",
+                                "componentType": "TDerivedProperty",
+                                "event": "changed",
+                                "time": 1495058799752,
+                                "parameters": {
+                                    "oldValue": 0,
+                                    "newValue": 1
+                                }
+                            },
+                            {
+                                "messageIndex": 237,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.view.atomNode.elementName",
+                                "componentType": "TText",
+                                "event": "textChanged",
+                                "time": 1495058799753,
+                                "parameters": {
+                                    "oldText": "",
+                                    "newText": "‪Hydrogen‬"
+                                }
+                            },
+                            {
+                                "messageIndex": 238,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.view.atomNode.ionIndicator",
+                                "componentType": "TText",
+                                "event": "textChanged",
+                                "time": 1495058799754,
+                                "parameters": {
+                                    "oldText": "",
+                                    "newText": "‪+ Ion‬"
+                                }
+                            },
+                            {
+                                "messageIndex": 239,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.view.atomNode.stabilityIndicator",
+                                "componentType": "TText",
+                                "event": "textChanged",
+                                "time": 1495058799754,
+                                "parameters": {
+                                    "oldText": "",
+                                    "newText": "‪Stable‬"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "messageIndex": 240,
+                        "eventType": "model",
+                        "phetioID": "buildAnAtom.atomScreen.model.particleAtom.protons",
+                        "componentType": "TObservableArray",
+                        "event": "itemAdded",
+                        "time": 1495058799756,
+                        "parameters": {
+                            "item": "TParticle"
+                        }
+                    },
+                    {
+                        "messageIndex": 241,
+                        "eventType": "model",
+                        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+                        "componentType": "TProperty",
+                        "event": "changed",
+                        "time": 1495058799756,
+                        "parameters": {
+                            "oldValue": {
+                                "x": -9.20000000000003,
+                                "y": -41.360000000000014
+                            },
+                            "newValue": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "messageIndex": 242,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799764,
+        "parameters": {
+            "oldValue": {
+                "x": -9.20000000000003,
+                "y": -41.360000000000014
+            },
+            "newValue": {
+                "x": -8.505182820164427,
+                "y": -38.23634363499997
+            }
+        }
+    },
+    {
+        "messageIndex": 243,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799780,
+        "parameters": {
+            "oldValue": {
+                "x": -8.505182820164427,
+                "y": -38.23634363499997
+            },
+            "newValue": {
+                "x": -7.810365640328824,
+                "y": -35.112687269999924
+            }
+        }
+    },
+    {
+        "messageIndex": 244,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799797,
+        "parameters": {
+            "oldValue": {
+                "x": -7.810365640328824,
+                "y": -35.112687269999924
+            },
+            "newValue": {
+                "x": -7.072122386753496,
+                "y": -31.793802382187376
+            }
+        }
+    },
+    {
+        "messageIndex": 245,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799815,
+        "parameters": {
+            "oldValue": {
+                "x": -7.072122386753496,
+                "y": -31.793802382187376
+            },
+            "newValue": {
+                "x": -6.290453059438445,
+                "y": -28.279688971562326
+            }
+        }
+    },
+    {
+        "messageIndex": 246,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799831,
+        "parameters": {
+            "oldValue": {
+                "x": -6.290453059438445,
+                "y": -28.279688971562326
+            },
+            "newValue": {
+                "x": -5.595635879602843,
+                "y": -25.156032606562277
+            }
+        }
+    },
+    {
+        "messageIndex": 247,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799851,
+        "parameters": {
+            "oldValue": {
+                "x": -5.595635879602843,
+                "y": -25.156032606562277
+            },
+            "newValue": {
+                "x": -4.72711440480834,
+                "y": -21.25146215031222
+            }
+        }
+    },
+    {
+        "messageIndex": 248,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799866,
+        "parameters": {
+            "oldValue": {
+                "x": -4.72711440480834,
+                "y": -21.25146215031222
+            },
+            "newValue": {
+                "x": -4.075723298712464,
+                "y": -18.32303430812468
+            }
+        }
+    },
+    {
+        "messageIndex": 249,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799880,
+        "parameters": {
+            "oldValue": {
+                "x": -4.075723298712464,
+                "y": -18.32303430812468
+            },
+            "newValue": {
+                "x": -3.4677582663563116,
+                "y": -15.589834988749638
+            }
+        }
+    },
+    {
+        "messageIndex": 250,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799897,
+        "parameters": {
+            "oldValue": {
+                "x": -3.4677582663563116,
+                "y": -15.589834988749638
+            },
+            "newValue": {
+                "x": -2.729515012780985,
+                "y": -12.270950100937089
+            }
+        }
+    },
+    {
+        "messageIndex": 251,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799914,
+        "parameters": {
+            "oldValue": {
+                "x": -2.729515012780985,
+                "y": -12.270950100937089
+            },
+            "newValue": {
+                "x": -1.9912717592056572,
+                "y": -8.95206521312454
+            }
+        }
+    },
+    {
+        "messageIndex": 252,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799930,
+        "parameters": {
+            "oldValue": {
+                "x": -1.9912717592056572,
+                "y": -8.95206521312454
+            },
+            "newValue": {
+                "x": -1.2964545793700548,
+                "y": -5.828408848124493
+            }
+        }
+    },
+    {
+        "messageIndex": 253,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799948,
+        "parameters": {
+            "oldValue": {
+                "x": -1.2964545793700548,
+                "y": -5.828408848124493
+            },
+            "newValue": {
+                "x": -0.514785252055003,
+                "y": -2.314295437499441
+            }
+        }
+    },
+    {
+        "messageIndex": 254,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_9.positionProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058799964,
+        "parameters": {
+            "oldValue": {
+                "x": -0.514785252055003,
+                "y": -2.314295437499441
+            },
+            "newValue": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    }
+]

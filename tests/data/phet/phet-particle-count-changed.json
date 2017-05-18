@@ -1,0 +1,14 @@
+[
+    {
+        "messageIndex": 236,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.particleAtom.particleCountProperty",
+        "componentType": "TDerivedProperty",
+        "event": "changed",
+        "time": 1495058799752,
+        "parameters": {
+            "oldValue": 0,
+            "newValue": 1
+        }
+    }
+]

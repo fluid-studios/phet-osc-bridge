@@ -1,0 +1,15 @@
+[
+    {
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/newValue",
+                "args": [
+                    {
+                          "type": "d",
+                          "value": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -15,7 +15,7 @@ Open Sound Control message payloads are flat; there is no way to send named para
 
 ## Structure of a PhET Event
 * Events are hierarchical; they can contain ``children`` events that "were triggered while this event was being processed." In this OSC binding, we have flattened the parent/child event structure, treating them as a flat sequence of events.
-* Events are fired by objects, which are uniquely identified by keypath-style structures ("foo.bar.baz"). 
+* Events are fired by objects, which are uniquely identified by keypath-style structures ("foo.bar.baz").
 
 ## Binding PhET Events to OSC Addresses
 
@@ -31,14 +31,14 @@ Since bundles can sometimes be less convenient to work with in environments like
     {
       packets: [
         {
-          address: "/buildAnAtom.atomScreen.view.nucleons_9.inputListener/user/dragged/x/value",
+          address: "/buildAnAtom.atomScreen.view.nucleons_9.inputListener/user/dragged/x",
           args: [
             type: "d",
             value: "473"
           ]
         },
         {
-          address: "/buildAnAtom.atomScreen.view.nucleons_9.inputListener/user/dragged/y/value",
+          address: "/buildAnAtom.atomScreen.view.nucleons_9.inputListener/user/dragged/y",
           args: [
             type: "d",
             value: "148"
@@ -51,14 +51,14 @@ Since bundles can sometimes be less convenient to work with in environments like
     {
       packets: [
         {
-          address: "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/oldValue/value",
+          address: "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/oldValue",
           args: [
             type: "b",
             value: true
           ]
         },
         {
-          address: "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/newValue/value",
+          address: "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/newValue",
           args: [
             type: "b",
             value: false
@@ -68,7 +68,7 @@ Since bundles can sometimes be less convenient to work with in environments like
     }
 
 
-### Example 3: A Primitive Property Value 
+### Example 3: A Primitive Property Value
 
 #### PhET Event JSON Structure
 
@@ -85,7 +85,7 @@ Since bundles can sometimes be less convenient to work with in environments like
       }
     }
 
-#### PhET Event JSON Structure
+#### OSC Bundle JSON Structure
 
     {
       packets: [
