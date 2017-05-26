@@ -14,7 +14,7 @@ var fluid = fluid || require("infusion"),
 fluid.defaults("phetosc.converter", {
     gradeNames: "fluid.component",
 
-    shouldBundleParams: true,
+    bundleParameters: true,
 
     addressTemplate: "/%phetioID/%eventType/%event/",
 
@@ -31,20 +31,25 @@ fluid.defaults("phetosc.converter", {
 
 phetosc.converter.toOSC = function (phetEvent, options) {
     var packets = [];
+    phetosc.converter.visitPhETEvents(phetEvent, options, packets,
+        phetosc.converter.eventToOSCMessage);
 
-
-    return phetosc.converter.eventToOSCMessage(phetEvent, options, packets);
+    return packets;
 };
 
-phetosc.converter.visitPhETEvents = function (phetEvent) {
+phetosc.converter.visitPhETEvents = function (phetEvent, options, packets, eventVisitor) {
+    eventVisitor(phetEvent, options, packets);
 
+    fluid.each(phetEvent.children, function (childEvent) {
+        phetosc.converter.visitPhETEvents(childEvent, packets, eventVisitor);
+    });
 };
 
 phetosc.converter.eventToOSCMessage = function (phetEvent, options, packets) {
     var messageCollection,
         togo;
 
-    if (options.shouldBundleParams) {
+    if (options.bundleParameters) {
         var bundle = phetosc.converter.createBundleForEvent(phetEvent, packets);
         messageCollection = bundle.packets;
         togo = bundle;
@@ -54,7 +59,8 @@ phetosc.converter.eventToOSCMessage = function (phetEvent, options, packets) {
     }
 
     var addressPrefix = phetosc.converter.messageAddressPrefix(phetEvent, options);
-    phetosc.converter.parametersToMessages(phetEvent, addressPrefix, options, messageCollection);
+    phetosc.converter.objectToMessages(phetEvent.parameters,
+         addressPrefix, options, messageCollection);
 
     return togo;
 };
@@ -73,34 +79,49 @@ phetosc.converter.messageAddressPrefix = function (phetEvent, options) {
     return fluid.stringTemplate(options.addressTemplate, phetEvent);
 };
 
-phetosc.converter.parametersToMessages = function (phetEvent, addressTemplate, options, packets) {
-    fluid.each(phetEvent.parameters, function (val, key) {
-        var message = phetosc.converter.parameterToMessage(val, key, addressTemplate, options);
-        packets.push(message);
+phetosc.converter.objectToMessages = function (obj, addressPrefix, options, packets) {
+    fluid.each(obj, function (val, key) {
+        phetosc.converter.parameterToMessages(val, key, addressPrefix, options, packets);
     });
 };
 
-phetosc.converter.parameterToMessage = function (val, key, addressTemplate, options) {
+phetosc.converter.parameterToMessages = function (val, key, addressPrefix, options, packets) {
+    if (fluid.isArrayable(val)) {
+        throw new Error("Array parameter value types are not yet supported. " +
+        "Can't convert parameter to an OSC messagee. Parameter value was: " +
+        fluid.prettyPrintJSON(val));
+    }
+
+    var address = addressPrefix + key,
+        parameterType = typeof val;
+
+    if (parameterType === "object") {
+        return phetosc.converter.objectToMessages(val, address + "/", options, packets);
+    } else {
+        return phetosc.converter.primitiveToMessage(val, address, parameterType, options, packets);
+    }
+};
+
+phetosc.converter.primitiveToMessage = function (val, address, parameterType, options, packets) {
     var message = {
-        address: addressTemplate + key,
+        address: address,
         args: [
             {
-                type: phetosc.converter.oscTypeForArgument(val, options.jsToOSCTypes),
+                type: phetosc.converter.oscTypeForJSType(parameterType, options.jsToOSCTypes),
                 value: val
             }
         ]
     };
 
-    return message;
+    packets.push(message);
 };
 
-phetosc.converter.oscTypeForArgument = function (val, jsToOSCTypes) {
-    var jsType = typeof val,
-        oscType = jsToOSCTypes[jsType];
+
+phetosc.converter.oscTypeForJSType = function (jsType, jsToOSCTypes) {
+    var oscType = jsToOSCTypes[jsType];
 
     if (!oscType) {
-        throw new Error("An invalid JavaScript value type was found. Can't convert parameter to an OSC messagee. Parameter value was: " +
-        fluid.prettyPrintJSON(val));
+        throw new Error("An invalid JavaScript value type was found. Can't convert parameter to an OSC message. Parameter value was: " + fluid.prettyPrintJSON(val));
     }
 
     return oscType;

@@ -1,0 +1,21 @@
+[
+    {
+        "address": "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/oldValue",
+        "args": [
+            {
+                  "type": "d",
+                  "value": 0
+            }
+        ]
+    },
+
+    {
+        "address": "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/newValue",
+        "args": [
+            {
+                  "type": "d",
+                  "value": 1
+            }
+        ]
+    }
+]
