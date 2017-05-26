@@ -18,14 +18,25 @@ fluid.defaults("phetosc.tests.converter.primitiveValueChanged", {
     phetPath: "../data/phet/phet-particle-count-changed.json",
     oscPath: "../data/osc/osc-particle-count-changed.json",
 
+    components: {
+        converter: {
+            type: "phetosc.converter"
+        }
+    },
+
     invokers: {
-        runTests: "phetosc.tests.converter.runTests"
+        runTests: {
+            funcName: "phetosc.tests.converter.runTests",
+            args: ["{that}", "{arguments}.0.0", "{arguments}.1.0"]
+        }
     }
 });
 
-phetosc.tests.converter.runTests = function (phetEvent, expected) {
+phetosc.tests.converter.runTests = function (that, phetEvent, expected) {
     jqUnit.test("Primitive value changed", function () {
-        jqUnit.assertTrue("Test not implemented!", expected);
+        var actual = that.converter.toOSC(phetEvent);
+        jqUnit.assertDeepEq("PhET event was correctly converted to an OSC bundle",
+            expected, actual);
     });
 };
 

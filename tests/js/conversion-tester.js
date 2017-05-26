@@ -19,6 +19,13 @@ fluid.defaults("phetosc.conversionTester", {
     phetPath: "",
     oscPath: "",
 
+    invokers: {
+        runTests: {
+            funcName: "fluid.mustBeOverridden",
+            args: ["{that}", "{arguments}.0", "{arguments}.1"]
+        }
+    },
+
     events: {
         onPhETFileLoaded: null,
         onOSCFileLoaded: null,
@@ -27,7 +34,8 @@ fluid.defaults("phetosc.conversionTester", {
             events: {
                 phet: "{that}.events.onPhETFileLoaded",
                 osc: "{that}.events.onOSCFileLoaded"
-            }
+            },
+            args: ["{arguments}.phet.0", "{arguments}.osc.0"]
         }
     },
 
@@ -63,11 +71,7 @@ fluid.defaults("phetosc.conversionTester", {
 
         "onFilesLoaded.runTests": {
             priority: "after:defineModule",
-            func: "{that}.runTests",
-            args: [
-                "{arguments}.phet.0",
-                "{arguments}.osc.0"
-            ]
+            func: "{that}.runTests"
         }
     }
 });
