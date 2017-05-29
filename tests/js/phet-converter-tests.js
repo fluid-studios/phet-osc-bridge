@@ -75,7 +75,7 @@ fluid.defaults("phetosc.tests.converter.primitiveValueChanged", {
 });
 
 phetosc.tests.converter.runTests = function (that, phetEvent, expected) {
-    jqUnit.test("Primitive value changed", function () {
+    jqUnit.test("Conversion from PhET event to OSC messages", function () {
         var actual = that.converter.toOSC(phetEvent);
         jqUnit.assertDeepEq("PhET event was correctly converted to OSC messages",
             expected, actual);
@@ -104,6 +104,19 @@ fluid.defaults("phetosc.tests.converter.objectParameter", {
     oscPath: "../data/osc/osc-object-valued-parameter-bundled.json"
 });
 
+fluid.defaults("phetosc.tests.converter.compositeEvent", {
+    gradeNames: [
+        "phetosc.tests.withBundledConverter",
+        "phetosc.tests.deepEqConversionTester"
+    ],
+
+    moduleName: "Composite event with children, bundled",
+
+    phetPath: "../data/phet/phet-composite-event-drag-ended.json",
+    oscPath: "../data/osc/osc-composite-event-drag-ended-bundled.json"
+});
+
 phetosc.tests.converter.primitiveValueChanged();
 phetosc.tests.converter.primitiveUnbundledValueChange();
 phetosc.tests.converter.objectParameter();
+phetosc.tests.converter.compositeEvent();

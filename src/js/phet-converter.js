@@ -16,7 +16,7 @@ fluid.defaults("phetosc.converter", {
 
     bundleParameters: true,
 
-    addressTemplate: "/%phetioID/%eventType/%event/",
+    addressTemplate: "/%phetioID/%eventType/%event",
 
     jsToOSCTypes: {
         "number": "d",
@@ -41,7 +41,7 @@ phetosc.converter.visitPhETEvents = function (phetEvent, options, packets, event
     eventVisitor(phetEvent, options, packets);
 
     fluid.each(phetEvent.children, function (childEvent) {
-        phetosc.converter.visitPhETEvents(childEvent, packets, eventVisitor);
+        phetosc.converter.visitPhETEvents(childEvent, options, packets, eventVisitor);
     });
 };
 
@@ -80,6 +80,13 @@ phetosc.converter.messageAddressPrefix = function (phetEvent, options) {
 };
 
 phetosc.converter.objectToMessages = function (obj, addressPrefix, options, packets) {
+    if (!obj || Object.keys(obj) < 1) {
+        // TODO: Rearrange argument order?
+        phetosc.converter.toMessage(undefined, addressPrefix, undefined, options, packets);
+        return;
+    }
+
+    addressPrefix = addressPrefix + "/";
     fluid.each(obj, function (val, key) {
         phetosc.converter.parameterToMessages(val, key, addressPrefix, options, packets);
     });
@@ -96,22 +103,25 @@ phetosc.converter.parameterToMessages = function (val, key, addressPrefix, optio
         parameterType = typeof val;
 
     if (parameterType === "object") {
-        return phetosc.converter.objectToMessages(val, address + "/", options, packets);
+        return phetosc.converter.objectToMessages(val, address, options, packets);
     } else {
-        return phetosc.converter.primitiveToMessage(val, address, parameterType, options, packets);
+        return phetosc.converter.toMessage(val, address, parameterType, options, packets);
     }
 };
 
-phetosc.converter.primitiveToMessage = function (val, address, parameterType, options, packets) {
+phetosc.converter.toMessage = function (val, address, parameterType, options, packets) {
     var message = {
-        address: address,
-        args: [
+        address: address
+    };
+
+    if (val !== undefined) {
+        message.args = [
             {
                 type: phetosc.converter.oscTypeForJSType(parameterType, options.jsToOSCTypes),
                 value: val
             }
         ]
-    };
+    }
 
     packets.push(message);
 };
