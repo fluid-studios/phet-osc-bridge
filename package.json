@@ -1,6 +1,7 @@
 {
     "name": "phetosc",
     "version": "0.1.0",
+    "main": "index.js",
     "description": "A bridge between PhET and sound synthesis applications using Open Sound Control",
     "author": "OCAD University",
     "homepage": "https://github.com/fluid-studios/phet-osc-bridge",
@@ -26,7 +27,9 @@
     },
     "dependencies": {
         "osc": "2.2.0",
-        "infusion": "3.0.0-dev.20170322T234120Z.278de35"
+        "infusion": "3.0.0-dev.20170322T234120Z.278de35",
+        "express": "4.15.3",
+        "ws": "3.0.0"
     },
     "scripts": {
         "node-test": "node tests/node-all-tests.js",
