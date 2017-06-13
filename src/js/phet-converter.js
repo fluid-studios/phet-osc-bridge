@@ -83,7 +83,7 @@ phetosc.converter.toMessage = function (address, that, val, paramType) {
 
 phetosc.converter.parameterToMessages = function (addressPrefix, that, val, key) {
     if (fluid.isArrayable(val)) {
-        that.events.onError.fire("An Array-typed event parameter was found; conversion of Array parameters to OSC messages is not yet supported. It was omitted.", value, key);
+        that.events.onError.fire("An Array-typed event parameter was found; conversion of Array parameters to OSC messages is not yet supported. It was omitted.", val, key);
         return [];
     }
 
