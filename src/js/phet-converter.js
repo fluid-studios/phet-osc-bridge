@@ -20,8 +20,7 @@ fluid.defaults("phetosc.converter", {
 
     jsToOSCTypes: {
         "number": "d",
-        "string": "s",
-        "boolean": "b"
+        "string": "s"
     },
 
     invokers: {
@@ -56,29 +55,37 @@ phetosc.converter.toMessage = function (address, that, val, paramType) {
         address: address
     };
 
-    var togo = [message];
+    var arg = val === undefined ? undefined :
+        paramType === "boolean" ? phetosc.converter.toBooleanMessage(val) :
+        phetosc.converter.toArgumentMessage(address, that, val, paramType);
 
-    if (val === undefined) {
-        return togo;
+    if (arg) {
+        message.args = [arg];
     }
 
+    return [message];
+};
+
+phetosc.converter.toBooleanMessage = function (val) {
+    return {
+        type: val ? "T": "F"
+    };
+};
+
+phetosc.converter.toArgumentMessage = function (address, that, val, paramType) {
     var oscType = phetosc.converter.oscTypeForJSType(paramType,
         that.options.jsToOSCTypes);
 
     if (!oscType) {
         that.events.onError.fire("A parameter property was found with a type of " + paramType + ", which is not OSC compatible. It was omitted.", address, val);
 
-        return togo;
+        return;
     }
 
-    message.args = [
-        {
-            type: oscType,
-            value: val
-        }
-    ];
-
-    return togo;
+    return {
+        type: oscType,
+        value: val
+    };
 };
 
 phetosc.converter.parameterToMessages = function (addressPrefix, that, val, key) {
@@ -116,6 +123,10 @@ phetosc.converter.messageAddressPrefix = function (phetEvent, that) {
 
 phetosc.converter.oscBundle = function (packets) {
     return {
+        timeTag: {
+            raw: [0, 0],
+            native: 0
+        },
         packets: packets
     };
 };

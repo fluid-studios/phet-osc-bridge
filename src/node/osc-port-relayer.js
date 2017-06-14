@@ -9,6 +9,7 @@
 "use strict";
 
 var fluid = fluid || require("infusion"),
+    osc = fluid.require("osc", require, "osc"),
     phetosc = phetosc || fluid.registerNamespace("phetosc");
 
 fluid.defaults("phetosc.oscPortRelayer", {
@@ -25,8 +26,8 @@ fluid.defaults("phetosc.oscPortRelayer", {
     }
 });
 
-fluid.defaults("phetosc.websocketPortRelayer", {
-    gradeNames: "fluid.component",
+fluid.defaults("phetosc.webSocketPortRelayer", {
+    gradeNames: "phetosc.oscPortRelayer",
 
     mergePolicy: {
         "socket": "nomerge"
@@ -41,20 +42,35 @@ fluid.defaults("phetosc.websocketPortRelayer", {
                     "socket": "nomerge"
                 },
 
-                socket: "{websocketInputPortRelayer}.options.webSocket"
+                socket: "{webSocketPortRelayer}.options.webSocket"
             }
         }
     },
 
     events: {
         onInputClose: "{inputPort}.events.onClose",
-        onOutputClose: "{output}.events.onClose",
+        onOutputClose: "{outputPort}.events.onClose",
         onInputMessage: "{inputPort}.events.onRaw"
     },
 
     listeners: {
+        "onCreate.log": {
+            "this": "console",
+            "method": "log",
+            args: ["Relayer was created"]
+        },
         "onInputClose.destroyRelay": "{that}.destroy()",
         "onOutputClose.destroyRelay": "{that}.destroy()",
-        "onInputMessage": "{outputPort}.sendRaw({arguments}.0)"
+        "onInputMessage.sendToOutputPort": "{outputPort}.sendRaw({arguments}.0)",
+        "onInputMessage.debug": {
+            priority: "before:sendToOutputPort",
+            funcName: "phetosc.webSocketPortRelayer.logInputMessages",
+            args: ["{arguments}.0"]
+        }
     }
 });
+
+phetosc.webSocketPortRelayer.logInputMessages = function (rawMessage) {
+    var parsed = osc.readPacket(rawMessage, {metadata: true});
+    console.log(parsed);
+};

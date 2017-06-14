@@ -24,7 +24,7 @@ fluid.defaults("phetosc.relayServer", {
     gradeNames: "fluid.component",
 
     port: 8081,
-    resourcePath: __dirname,
+    resourcePath: __dirname + "/../../",
 
     members: {
         expressApp: {
@@ -57,7 +57,7 @@ fluid.defaults("phetosc.relayServer", {
 
     dynamicComponents: {
         portRelayer: {
-            type: "phetosc.websocketPortRelayer",
+            type: "phetosc.webSocketPortRelayer",
             createOnEvent: "onConnection",
             options: {
                 webSocket: "{arguments}.0",
@@ -78,6 +78,20 @@ fluid.defaults("phetosc.relayServer", {
             "this": "{that}.webSocketServer",
             method: "on",
             args: ["connection", "{that}.events.onConnection.fire"]
+        },
+
+        "onConnection.log": {
+            priority: "first",
+            "this": "console",
+            method: "log",
+            args: ["A Web Socket connection was established."]
+        },
+
+        "onClose.log": {
+            priority: "last",
+            "this": "console",
+            method: "log",
+            args: ["A Web Socket connection was closed."]
         }
     }
 });

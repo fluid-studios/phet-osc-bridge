@@ -1,5 +1,10 @@
 [
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.protons_0.destinationProperty/model/changed/oldValue/x",

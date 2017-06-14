@@ -1,5 +1,10 @@
 [
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.view.nucleons_9.inputListener/user/dragEnded"
@@ -7,13 +12,17 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/oldValue",
                 "args": [
                     {
-                        "type": "b",
-                        "value": true
+                        "type": "T"
                     }
                 ]
             },
@@ -21,14 +30,18 @@
                 "address": "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/newValue",
                 "args": [
                     {
-                        "type": "b",
-                        "value": false
+                        "type": "F"
                     }
                 ]
             }
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.particleAtom.protonCountProperty/model/changed/oldValue",
@@ -51,6 +64,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.particleAtom.chargeProperty/model/changed/oldValue",
@@ -73,6 +91,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.view.chargeMeter.readoutText/model/textChanged/oldText",
@@ -95,6 +118,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.particleAtom.massNumberProperty/model/changed/oldValue",
@@ -117,6 +145,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.view.massNumberDisplay.numericalText/model/textChanged/oldText",
@@ -139,6 +172,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/oldValue",
@@ -161,6 +199,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.view.atomNode.elementName/model/textChanged/oldText",
@@ -183,6 +226,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.view.atomNode.ionIndicator/model/textChanged/oldText",
@@ -205,6 +253,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.view.atomNode.stabilityIndicator/model/textChanged/oldText",
@@ -227,6 +280,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address": "/buildAnAtom.atomScreen.model.particleAtom.protons/model/itemAdded/item",
@@ -240,6 +298,11 @@
         ]
     },
     {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
         "packets": [
             {
                 "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/oldValue/x",

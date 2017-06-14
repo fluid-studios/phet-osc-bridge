@@ -17,6 +17,9 @@ fluid.defaults("phetosc.port", {
 
     portType: "fluid.mustBeOverridden",
 
+    metadata: true,
+    unpackSingleArgs: false,
+
     portEventMap: {
         open: "onOpen",
         ready: "onReady",
@@ -32,12 +35,17 @@ fluid.defaults("phetosc.port", {
         port: {
             expander: {
                 funcName: "phetosc.port.createPort",
-                args: ["{that}.options"]
+                args: ["{port}.options"]
             }
         }
     },
 
     invokers: {
+        open: {
+            "this": "{that}.port",
+            method: "open"
+        },
+
         send: {
             "this": "{that}.port",
             method: "send"
