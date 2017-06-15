@@ -57,7 +57,7 @@ fluid.defaults("phetosc.relayServer", {
 
     dynamicComponents: {
         portRelayer: {
-            type: "phetosc.webSocketPortRelayer",
+            type: "phetosc.webSocketUDPPortRelayer",
             createOnEvent: "onConnection",
             options: {
                 webSocket: "{arguments}.0",
