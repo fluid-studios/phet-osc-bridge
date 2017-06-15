@@ -75,7 +75,7 @@ phetosc.converter.toMessage = function (address, that, val, paramType) {
 
 phetosc.converter.toBooleanMessage = function (val) {
     return {
-        type: val ? "T": "F"
+        type: val ? "T" : "F"
     };
 };
 
