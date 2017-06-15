@@ -18,18 +18,28 @@ fluid.defaults("phetosc.bridge", {
     openImmediately: true,
     bundleParameters: true,
     excludeParameters: ["oldValue"],
-    phetioIDs: "*",
+    phetioIDPatterns: "*",
 
     invokers: {
         bind: "phetosc.bridge.bind({that}, {arguments}.0)"
     },
 
     components: {
+        filter: {
+            type: "phetosc.eventFilter",
+            options: {
+                phetioIDPatterns: "{bridge}.options.phetioIDPatterns"
+            }
+        },
+
         converter: {
             type: "phetosc.converter",
             options: {
-                bundleParameters: "{bridge}.bundleParameters",
-                excludeParameters: "{bridge}.excludeParameters"
+                bundleParameters: "{bridge}.options.bundleParameters",
+                excludeParameters: "{bridge}.options.excludeParameters",
+                components: {
+                    filter: "{filter}"
+                }
             }
         },
 
@@ -46,12 +56,18 @@ fluid.defaults("phetosc.bridge", {
 
     events: {
         onEvent: null,
+        onFilteredEvent: null,
         afterEventConverted: null
     },
 
     listeners: {
-        "onEvent.convert": {
+        "onFilteredEvent.convert": {
             funcName: "phetosc.bridge.convertEvent",
+            args: ["{that}", "{arguments}.0"]
+        },
+
+        "onEvent.filter": {
+            funcName: "phetosc.bridge.filterEvent",
             args: ["{that}", "{arguments}.0.args.0"]
         },
 
@@ -63,32 +79,25 @@ fluid.defaults("phetosc.bridge", {
 });
 
 phetosc.bridge.bind = function (that, sim) {
-    var phetioIDs = that.options.phetioIDs,
-        listener = that.events.onEvent.fire;
-
-    if (phetioIDs === "*") {
-        sim.addMessageListener(listener);
-    } else if (fluid.isArrayable(phetioIDs)) {
-        phetosc.bridge.linkInstances(phetioIDs, sim, listener)
-    }
+    sim.addMessageListener(that.events.onEvent.fire);
 };
 
-phetosc.bridge.linkInstances = function (phetioIDs, sim, listener) {
-    fluid.each(phetioIDs, function (phetioID) {
-        phetosc.bridge.linkInstance(phetioID, sim, listener);
-    });
-};
-
-phetosc.bridge.linkInstance = function (phetioID, sim, listener) {
-    sim.invoke(phetioID, "link", listener);
-};
-
-phetosc.bridge.convertEvent = function (that, phetEvent) {
-    if (!phetEvent) {
+phetosc.bridge.filterEvent = function (that, phetEventString) {
+    if (!phetEventString) {
         return;
     }
 
-    var parsedEvent = JSON.parse(phetEvent);
+    if (that.filter.filterEvent(phetEventString)) {
+        that.events.onFilteredEvent.fire(phetEventString);
+    }
+};
+
+phetosc.bridge.convertEvent = function (that, phetEventString) {
+    if (!phetEventString) {
+        return;
+    }
+
+    var parsedEvent = JSON.parse(phetEventString);
     var oscPackets = that.converter.toOSC(parsedEvent);
     that.events.afterEventConverted.fire(oscPackets);
 };

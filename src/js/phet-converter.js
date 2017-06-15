@@ -15,7 +15,8 @@ fluid.defaults("phetosc.converter", {
     gradeNames: "fluid.component",
 
     bundleParameters: true,
-
+    // TODO: Implement this!
+    excludeParameters: [],
     addressTemplate: "/%phetioID/%eventType/%event",
 
     jsToOSCTypes: {
@@ -25,6 +26,12 @@ fluid.defaults("phetosc.converter", {
 
     invokers: {
         toOSC: "phetosc.converter.toOSC({arguments}.0, {that})"
+    },
+
+    components: {
+        filter: {
+            type: "phetosc.eventFilter"
+        }
     },
 
     events: {
@@ -77,7 +84,9 @@ phetosc.converter.toArgumentMessage = function (address, that, val, paramType) {
         that.options.jsToOSCTypes);
 
     if (!oscType) {
-        that.events.onError.fire("A parameter property was found with a type of " + paramType + ", which is not OSC compatible. It was omitted.", address, val);
+        that.events.onError.fire("A parameter property was found with a type of " +
+            paramType + ", which is not OSC compatible. It was omitted.",
+            address, val);
 
         return;
     }
@@ -90,7 +99,9 @@ phetosc.converter.toArgumentMessage = function (address, that, val, paramType) {
 
 phetosc.converter.parameterToMessages = function (addressPrefix, that, val, key) {
     if (fluid.isArrayable(val)) {
-        that.events.onError.fire("An Array-typed event parameter was found; conversion of Array parameters to OSC messages is not yet supported. It was omitted.", val, key);
+        that.events.onError.fire("An Array-typed event parameter was found; conversion of Array parameters to OSC messages is not yet supported. It was omitted.",
+            val, key);
+
         return [];
     }
 
@@ -132,6 +143,10 @@ phetosc.converter.oscBundle = function (packets) {
 };
 
 phetosc.converter.eventToOSCMessages = function (phetEvent, that) {
+    if (!that.filter.filterEvent(phetEvent.phetioID)) {
+        return [];
+    }
+
     var addressPrefix = phetosc.converter.messageAddressPrefix(phetEvent, that);
 
     var messages = phetosc.converter.objectToMessages(addressPrefix, that, phetEvent.parameters);

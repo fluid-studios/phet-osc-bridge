@@ -9,6 +9,7 @@
 "use strict";
 
 var fluid = require("infusion");
+fluid.require("%phetosc/src/js/event-filter.js");
 fluid.require("%phetosc/src/js/phet-converter.js");
 fluid.require("%phetosc/tests/js/conversion-tester.js");
 
