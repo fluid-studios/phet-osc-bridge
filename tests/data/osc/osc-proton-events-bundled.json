@@ -1,0 +1,72 @@
+[
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/oldValue",
+                "args": [
+                    {
+                        "type": "T"
+                    }
+                ]
+            },
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/newValue",
+                "args": [
+                    {
+                        "type": "F"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/oldValue/x",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": -9.20000000000003
+                    }
+                ]
+            },
+            {
+                "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/oldValue/y",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": -41.360000000000014
+                    }
+                ]
+            },
+            {
+                "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/newValue/x",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 0
+                    }
+                ]
+            },
+            {
+                "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/newValue/y",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

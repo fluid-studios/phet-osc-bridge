@@ -1,0 +1,239 @@
+[
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.view.nucleons_9.inputListener/user/dragEnded"
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_9.userControlledProperty/model/changed/newValue",
+                "args": [
+                    {
+                        "type": "F"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.particleAtom.protonCountProperty/model/changed/newValue",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.particleAtom.chargeProperty/model/changed/newValue",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.view.chargeMeter.readoutText/model/textChanged/newText",
+                "args": [
+                    {
+                        "type": "s",
+                        "value": "+1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+
+            {
+                "address": "/buildAnAtom.atomScreen.model.particleAtom.massNumberProperty/model/changed/newValue",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.view.massNumberDisplay.numericalText/model/textChanged/newText",
+                "args": [
+                    {
+                        "type": "s",
+                        "value": "1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/newValue",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.view.atomNode.elementName/model/textChanged/newText",
+                "args": [
+                    {
+                        "type": "s",
+                        "value": "‪Hydrogen‬"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.view.atomNode.ionIndicator/model/textChanged/newText",
+                "args": [
+                    {
+                        "type": "s",
+                        "value": "‪+ Ion‬"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.view.atomNode.stabilityIndicator/model/textChanged/newText",
+                "args": [
+                    {
+                        "type": "s",
+                        "value": "‪Stable‬"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.particleAtom.protons/model/itemAdded/item",
+                "args": [
+                    {
+                        "type": "s",
+                        "value": "TParticle"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/newValue/x",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 0
+                    }
+                ]
+            },
+            {
+                "address":"/buildAnAtom.atomScreen.model.protons_9.destinationProperty/model/changed/newValue/y",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -15,7 +15,6 @@ fluid.defaults("phetosc.converter", {
     gradeNames: "fluid.component",
 
     bundleParameters: true,
-    // TODO: Implement this!
     excludeParameters: [],
     addressTemplate: "/%phetioID/%eventType/%event",
 
@@ -102,6 +101,11 @@ phetosc.converter.parameterToMessages = function (addressPrefix, that, val, key)
         that.events.onError.fire("An Array-typed event parameter was found; conversion of Array parameters to OSC messages is not yet supported. It was omitted.",
             val, key);
 
+        return [];
+    }
+
+    if (that.options.excludeParameters.indexOf(key) > -1) {
+        // Skip the parameter.
         return [];
     }
 
