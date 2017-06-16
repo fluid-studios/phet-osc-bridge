@@ -132,7 +132,7 @@ fluid.defaults("phetosc.tests.withIDPatterns", {
                 }
             }
         }
-    },
+    }
 });
 
 fluid.defaults("phetosc.tests.converter.filterCompositeEventByID", {
