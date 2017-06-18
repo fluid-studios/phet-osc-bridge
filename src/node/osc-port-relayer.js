@@ -9,7 +9,6 @@
 "use strict";
 
 var fluid = fluid || require("infusion"),
-    osc = fluid.require("osc", require, "osc"),
     phetosc = phetosc || fluid.registerNamespace("phetosc");
 
 fluid.defaults("phetosc.oscPortRelayer", {

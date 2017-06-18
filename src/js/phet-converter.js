@@ -16,9 +16,8 @@ fluid.defaults("phetosc.converter", {
 
     bundleParameters: true,
     excludeParameters: [],
-    addressTemplate: "/%phetioID/%eventType/%event",
-
     addressMap: {},
+    addressTemplate: "/%phetioID/%eventType/%event",
 
     jsToOSCTypes: {
         "number": "d",

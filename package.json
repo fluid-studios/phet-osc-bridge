@@ -37,6 +37,7 @@
     "scripts": {
         "node-test": "node tests/node-all-tests.js",
         "browser-test": "testem ci --file tests/testem.json",
-        "test": "npm run node-test && npm run browser-test"
+        "test": "npm run node-test && npm run browser-test",
+        "prepublish": "grunt"
     }
 }
