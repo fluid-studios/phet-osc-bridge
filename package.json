@@ -1,6 +1,6 @@
 {
     "name": "phetosc",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "main": "index.js",
     "description": "A bridge between PhET and sound synthesis applications using Open Sound Control",
     "author": "OCAD University",
@@ -23,7 +23,10 @@
         "grunt": "1.0.1",
         "eslint-config-fluid": "1.0.0",
         "fluid-grunt-eslint": "18.1.2",
-        "grunt-jsonlint": "1.0.4"
+        "grunt-jsonlint": "1.0.4",
+        "grunt-contrib-clean": "~1.0.0",
+        "grunt-contrib-concat": "~1.0.1",
+        "grunt-contrib-uglify": "~1.0.1"
     },
     "dependencies": {
         "osc": "2.2.0",

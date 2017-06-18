@@ -75,26 +75,3 @@ phetosc.webSocketPortRelayer.logInputMessages = function (rawMessage) {
     var parsed = osc.readPacket(rawMessage, {metadata: true});
     console.log(parsed);
 };
-
-fluid.defaults("phetosc.webSocketUDPPortRelayer", {
-    gradeNames: "phetosc.webSocketPortRelayer",
-
-    outputAddress: "127.0.0.1",
-    outputPort: 57120,
-
-    components: {
-        outputPort: {
-            type: "phetosc.udpPort",
-            options: {
-                remoteAddress: "{webSocketUDPPortRelayer}.options.outputAddress",
-                remotePort: "{webSocketUDPPortRelayer}.options.outputPort"
-            }
-        }
-    },
-
-    listeners: {
-        "onCreate.openOutputPort": {
-            func: "{outputPort}.open"
-        }
-    }
-});

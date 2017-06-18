@@ -101,4 +101,3 @@ phetosc.bridge.convertEvent = function (that, phetEventString) {
     var oscPackets = that.converter.toOSC(parsedEvent);
     that.events.afterEventConverted.fire(oscPackets);
 };
-

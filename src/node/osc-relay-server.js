@@ -23,21 +23,27 @@ fluid.require("%phetosc/src/node/osc-port-relayer.js");
 fluid.defaults("phetosc.relayServer", {
     gradeNames: "fluid.component",
 
-    port: 8081,
-    resourcePath: __dirname + "/../../",
+    webServerPort: 8081,
+    remoteAddress: "127.0.0.1",
+    remotePort: 57120,
+    localAddress: "0.0.0.0",
+    localPort: 57121,
+
+    phetPath: __dirname + "/../../examples/",
+    resourcePath: __dirname + "/../../dist/",
 
     members: {
         expressApp: {
             expander: {
                 funcName: "phetosc.relayServer.createExpressStaticApp",
-                args: ["{that}.options.resourcePath"]
+                args: ["{that}.options"]
             }
         },
 
         httpServer: {
             expander: {
                 funcName: "phetosc.relayServer.createHTTPServer",
-                args: ["{that}.expressApp", "{that}.options.port"]
+                args: ["{that}.expressApp", "{that}.options.webServerPort"]
             }
         },
 
@@ -51,16 +57,31 @@ fluid.defaults("phetosc.relayServer", {
 
     components: {
         outputPort: {
-            type: "phetosc.udpPort"
+            type: "phetosc.udpPort",
+            options: {
+                remoteAddress: "{relayServer}.options.remoteAddress",
+                remotePort: "{relayServer}.options.remotePort",
+                localAddress: "{relayServer}.options.localAddress",
+                localPort: "{relayServer}.options.localPort",
+
+                listeners: {
+                    "onCreate.openOutputPort": {
+                        func: "{that}.open"
+                    }
+                }
+            }
         }
     },
 
     dynamicComponents: {
         portRelayer: {
-            type: "phetosc.webSocketUDPPortRelayer",
+            type: "phetosc.webSocketPortRelayer",
             createOnEvent: "onConnection",
             options: {
                 webSocket: "{arguments}.0",
+                components: {
+                    outputPort: "{relayServer}.outputPort"
+                },
                 events: {
                     onDestroy: "{relayServer}.events.onClose"
                 }
@@ -96,15 +117,18 @@ fluid.defaults("phetosc.relayServer", {
     }
 });
 
-phetosc.relayServer.createExpressStaticApp = function (resourcePath) {
-    var app = express();
-    app.use("/", express["static"](resourcePath));
+phetosc.relayServer.createExpressStaticApp = function (options) {
+    var app = express(),
+        expressStatic = express["static"];
+
+    app.use("/", expressStatic(options.phetPath));
+    app.use("/phet-osc-bridge", expressStatic(options.resourcePath));
 
     return app;
 };
 
-phetosc.relayServer.createHTTPServer = function (app, port) {
-    return app.listen(port);
+phetosc.relayServer.createHTTPServer = function (app, webServerPort) {
+    return app.listen(webServerPort);
 };
 
 phetosc.relayServer.createWebSocketServer = function (httpServer) {
