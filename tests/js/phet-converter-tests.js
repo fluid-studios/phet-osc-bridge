@@ -192,6 +192,31 @@ fluid.defaults("phetosc.tests.converter.filterCompositeEventParameters", {
     oscPath: "../data/osc/osc-composite-event-no-oldvalue-oldtext-bundled.json"
 });
 
+fluid.defaults("phetosc.tests.converter.mappedAddress", {
+    gradeNames: [
+        "phetosc.tests.withUnbundledConverter",
+        "phetosc.tests.deepEqConversionTester"
+    ],
+
+    moduleName: "Mapped address",
+
+    components: {
+        converter: {
+            options: {
+                addressMap: {
+                    "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/newValue": "/particleCount"
+                },
+
+                excludeParameters: [
+                    "oldValue"
+                ]
+            }
+        }
+    },
+
+    phetPath: "../data/phet/phet-particle-count-changed.json",
+    oscPath: "../data/osc/osc-particle-count-mapped-unbundled.json"
+});
 phetosc.tests.converter.primitiveValueChanged();
 phetosc.tests.converter.primitiveUnbundledValueChange();
 phetosc.tests.converter.objectParameter();
@@ -199,3 +224,4 @@ phetosc.tests.converter.compositeEvent();
 phetosc.tests.converter.filterCompositeEventByID();
 phetosc.tests.converter.filterCompositeEventByPattern();
 phetosc.tests.converter.filterCompositeEventParameters();
+phetosc.tests.converter.mappedAddress();

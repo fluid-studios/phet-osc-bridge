@@ -62,16 +62,6 @@ fluid.defaults("phetosc.webSocketPortRelayer", {
         },
         "onInputClose.destroyRelay": "{that}.destroy()",
         "onOutputClose.destroyRelay": "{that}.destroy()",
-        "onInputMessage.sendToOutputPort": "{outputPort}.sendRaw({arguments}.0)",
-        "onInputMessage.debug": {
-            priority: "before:sendToOutputPort",
-            funcName: "phetosc.webSocketPortRelayer.logInputMessages",
-            args: ["{arguments}.0"]
-        }
+        "onInputMessage.sendToOutputPort": "{outputPort}.sendRaw({arguments}.0)"
     }
 });
-
-phetosc.webSocketPortRelayer.logInputMessages = function (rawMessage) {
-    var parsed = osc.readPacket(rawMessage, {metadata: true});
-    console.log(parsed);
-};

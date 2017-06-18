@@ -18,6 +18,8 @@ fluid.defaults("phetosc.converter", {
     excludeParameters: [],
     addressTemplate: "/%phetioID/%eventType/%event",
 
+    addressMap: {},
+
     jsToOSCTypes: {
         "number": "d",
         "string": "s"
@@ -57,6 +59,13 @@ phetosc.converter.oscTypeForJSType = function (jsType, jsToOSCTypes) {
 };
 
 phetosc.converter.toMessage = function (address, that, val, paramType) {
+    var mappedAddress = that.options.addressMap[address];
+    if (mappedAddress) {
+        // Just in case users forget the OSC-required leading slash.
+        address = mappedAddress.indexOf("/") !== 0 ?
+            "/" + mappedAddress : mappedAddress;
+    }
+
     var message = {
         address: address
     };
