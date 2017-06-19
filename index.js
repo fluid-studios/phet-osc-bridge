@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*
  * PhET-OSC Bridge OSC Node.js Driver
  * http://github.com/fluid-studios/phet-osc-bridge

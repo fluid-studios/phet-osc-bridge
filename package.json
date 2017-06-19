@@ -2,6 +2,9 @@
     "name": "phetosc",
     "version": "1.0.0",
     "main": "index.js",
+    "bin": {
+        "phet-osc-bridge" : "./index.js"
+    },
     "description": "A bridge between PhET and sound synthesis applications using Open Sound Control",
     "author": "OCAD University",
     "homepage": "https://github.com/fluid-studios/phet-osc-bridge",

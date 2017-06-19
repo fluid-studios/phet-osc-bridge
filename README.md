@@ -1,31 +1,111 @@
 # PhET to Open Sound Control Bridge
 
-This repository provides a library for sending the events fired by a [PhET](https://phet.colorado.edu/) physics simulation, [wrapped with PhETio](https://phet-io.colorado.edu/devguide/#documentation), to remote processes using [Open Sound Control](http://opensoundcontrol.org/spec-1_0). The purpose of this bridge is to make it easier for sound designers to use familiar audio synthesis tools such as Max and SuperCollider, to quickly prototype sonifications for PhET.
+The PhET OSC Bridge provides a means for sending events fired by a [PhET](https://phet.colorado.edu/) physics simulation, [wrapped with PhET-iO](https://phet-io.colorado.edu/devguide/#documentation), to remote processes using the [Open Sound Control](http://opensoundcontrol.org/spec-1_0) protocol. The purpose of this bridge is to make it easier for sound designers to use familiar audio synthesis tools such as Max and SuperCollider, to quickly prototype sonifications for PhET.
 
-Open Sound Control message payloads are flat; there is no way to send named parameters, dictionaries, or objects within an OSC message. PhET events, however, represent changes within a hierarchical value space consisting both of user interface components and model properties. When binding PhET events to OSC, a message denotes a change to a single value within an object that is uniquely identified by the structure of the OSC message's address.
-
-## Important Links
+## Useful Links
 * Public [PhET.io Developer Guide](https://phet-io.colorado.edu/devguide/#documentation)
 * The [Open Sound Control 1.0 Specification](http://opensoundcontrol.org/spec-1_0)
 * [osc.js](https://github.com/colinbdclark/osc.js)
 
-## Types of PhET Events
-* User: triggered by a user action
-* Model: a change in the simulation's sate
+## Architecture
 
-## Structure of a PhET Event
-* Events are hierarchical; they can contain ``children`` events that "were triggered while this event was being processed." In this OSC binding, we have flattened the parent/child event structure, treating them as a flat sequence of events.
-* Events are fired by objects, which are uniquely identified by keypath-style structures ("foo.bar.baz").
+The PhET OSC Bridge includes several components:
 
-## Binding PhET Events to OSC Addresses
+1. A client-side JavaScript component, the <code>phetosc.bridge</code> that can be added to any PhET-iO wrapper HTML page to listen for sim events.
+2. A web server that serves up PhET-iO wrapper HTML pages, and responds to incoming Web Socket requests from the client-side bridge component.
+3. An OSC output port (configured to use UDP by default) that relays OSC messages to the the remote server (e.g. SuperCollider or Max).
 
-In order to accurately map JSON objects to OSC messages, each event is represented as an OSC bundle. Each property of each event parameter is a separate message within the bundle.
+## Using the PhET OSC Bridge
+
+### Getting Set Up
+First, follow the instructions provided with your PhET-iO license to generate an appropriate wrapper HTML page. More information is available in the [PhET-iO Developer's Guide](https://phet-io.colorado.edu/devguide/).
+
+Secondly, install the <code>phet-osc-bridge</code> npm module:
+
+    npm install -g phet-osc-bridge
+
+### Adding the Bridge Component to your PhET-iO Wrapper
+The PhET OSC Bridge web server will serve up the required client JavaScript file. You just need to add it to your PhET-iO wrapper's head using a <code>script</code> tag:
+
+    <script type="text/javascript" src="/phet-osc-bridge/phet-osc-bridge.js"></script>
+
+Next, you'll need to instantiate the bridge component and bind it to the PhET sim's <code>simIFrameClient</code> object. This will cause all events emitted from the sim to be available across the bridge. Paste this code into the <code>onSimInitialized</code> event handler function that is included in your wrapper's call to <code>simIFrameClient.launchSim()</code>:
+
+    var oscBridge = phetosc.bridge();
+    oscBridge.bind(simIFrameClient);
+
+### Starting the Bridge's Server
+Lastly, you'll need to start the PhET OSC Bridge server. In your terminal, navigate to the directory in which your PhET-iO wrapper files are located, and run:
+
+    phet-osc-bridge --phetPath .
+
+By default, your wrapper file will be available in your web browser at ``http://localhost:8081/<wrapper-file-name>``.
+
+## Server Configuration Options
+Other configuration options can be specified on the command line. More information can be found by running the <code>phet-osc-bridge</code> command with the <code>--help</code> flag.
+
+## Bridge Options
+
+The <code>phetosc.bridge</code> component provides a variety of configuration options, which are described in the sections below.
+
+### Filtering Events
+In many cases, only a subset of events are relevant for a sonification. The <code>phetioIDPatterns</code> option allows you to specify an array of regular expression patterns that will be matched against the <code>phetioID</code> of events. Only those events with a <code>phetioID</code> matching the specified list of regular expressions will be sent via OSC.
+
+#### Example: Listening Only for Particle Count Change Events
+
+    var oscBridge = phetosc.bridge({
+        phetioIDPatterns: [
+            "buildAnAtom.atomScreen.model.particleAtom.particleCountProperty"
+        ]
+    });
+
+### Excluding Parameters
+Some parameters may not be relevant for sonification, such as the <code>oldValue</code> parameter that is specified whenever a property changes. The <code>excludeParameters</code> option can be specified to filter out parameters by name.
+
+#### Example: Filtering out <code>oldValue</code> Parameters
+
+    var oscBridge = phetosc.bridge({
+        excludeParameters: [
+            "oldValue"
+        ]
+    });
+
+### Mapping OSC Addresses
+ By default, PhET OSC Bridge will use a long-form address space like this:
 
 ``/<phetioID>/<event>/<name>/<parameter>/<parameter value key>``
 
-Since bundles can sometimes be less convenient to work with in environments like SuperCollider or Max, an option will be provided to send unbundled messages.
+In some cases, however, you may want to map the outgoing OSC messages to a simpler address space. The <code>addressMap</code> option allows you to provide alternative addresses for specified events. This option should provide, as key, the long-form OSC address you'd like to map; the value is the new address.
 
-### Examples
+``<long form event address>: <mapped address>``
+
+#### Example: Mapping the OSC Address for Particle Count Changes
+
+    var oscBridge = phetosc.bridge({
+        addressMap: {
+            "/buildAnAtom.atomScreen.model.particleAtom.particleCountProperty/model/changed/newValue": "/particleCount"
+        }
+    });
+
+## PhET -> OSC Implementation Details
+Open Sound Control message payloads are flat; there is no way to send named parameters, dictionaries, or objects within an OSC message. PhET events, however, represent changes within a hierarchical value space consisting both of user interface components and model properties. When binding PhET events to OSC, a message denotes a change to a single value within an object that is uniquely identified by the structure of the OSC message's address.
+
+### Types of PhET Events
+* User: triggered by a user action
+* Model: a change in the simulation's sate
+
+### Structure of a PhET Event
+* Events are hierarchical; they can contain ``children`` events that "were triggered while this event was being processed." In this OSC binding, we have flattened the parent/child event structure, treating them as a flat sequence of events.
+* Events are fired by objects, which are uniquely identified by keypath-style structures ("foo.bar.baz").
+
+### Binding PhET Events to OSC Addresses
+In order to accurately map JSON objects to OSC messages, each event can be represented as an OSC bundle. Each property of each event parameter is a separate message within the bundle.
+
+``/<phetioID>/<event>/<name>/<parameter>/<parameter value key>``
+
+Since bundles can sometimes be inconvenient to work with in environments like SuperCollider or Max, the <code>bundleParameters</code> option can be set to <code>false</code> to send unbundled messages. This is the default.
+
+### Example PhET to OSC Transformations
 
 #### Example 1: User Dragged a Proton Event
     {
@@ -144,81 +224,6 @@ Since bundles can sometimes be less convenient to work with in environments like
               value: -19.8776496629066
             }
           ]
-        }
-      ]
-    }
-
-## Filtering Events
-
-In many cases, only a subset of events are relevant for a sonification. A simple mechanism for specifying which events are required, and a means for re-basing or aliasing those addresses, is provided.
-
-<table>
-  <tr>
-    <th>Filter Property</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><code>phetioID</code></td>
-    <td>The PhET io ID of the object from which you want listen for events</td>
-  </tr>
-  <tr>
-    <td><code>event</code></td>
-    <td>The event name to listen for</td>
-  </tr>
-  <tr>
-    <td><code>address</code></td>
-    <td>A custom OSC address to use</td>
-  </tr>
-  <tr>
-    <td><code>parameters</code></td>
-    <td>The parameter which, when changed, should cause an OSC message to be sent</td>
-  </tr>
-</table>
-
-In the case that more than one ``parameter`` is specified and a custom ``address`` is also provided, the parameter name will be appended to the end of the specified ``address``. Otherwise, the standard addressing scheme is used.
-
-### Example
-
-Listen only for the following changes:
-* the new proton count
-* the new particle count
-* the new charge property
-* the new element name
-* both the old and the new stability of the atom
-
-#### Event Subscription Specification
-
-    {
-      eventSubscriptions: [
-        {
-          phetioID: "buildAnAtom.atomScreen.model.particleAtom.protonCountProperty",
-          event: "changed",
-          address: "/atom/protonCount",
-          parameters: ["newValue"]
-        },
-        {
-          phetioID: "buildAnAtom.atomScreen.model.particleAtom.chargeProperty",
-          event: "changed",
-          address: "/atom/charge",
-          parameters: ["newValue"]
-        },
-        {
-          phetioID: "buildAnAtom.atomScreen.model.particleAtom.particleCountProperty",
-          event: "changed",
-          address: "/atom/particleCount",
-          parameters: ["newValue"]
-        },
-        {
-          phetioID: "buildAnAtom.atomScreen.view.atomNode.stabilityIndicator",
-          event: "textChanged",
-          address: "/atom/elementName",
-          parameters: ["newValue"]
-        },
-        {
-          phetioID: "buildAnAtom.atomScreen.view.atomNode.stabilityIndicator",
-          event: "textChanged",
-          address: "/atom/stability",
-          parameters: ["newValue", "oldValue"]
         }
       ]
     }

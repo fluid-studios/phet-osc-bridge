@@ -16,8 +16,8 @@ fluid.defaults("phetosc.bridge", {
 
     url: "ws://localhost:8081",
     openImmediately: true,
-    bundleParameters: true,
-    excludeParameters: ["oldValue"],
+    bundleParameters: false,
+    excludeParameters: [],
     phetioIDPatterns: "*",
     addressMap: {},
 
