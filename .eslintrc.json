@@ -3,5 +3,10 @@
     "globals": {
         "fluid": true,
         "phetosc": true
+    },
+
+    "env": {
+        "browser": "true",
+        "node": "true"
     }
 }

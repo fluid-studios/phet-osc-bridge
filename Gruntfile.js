@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 
         eslint: {
             all: [
+                "./*.js",
                 "src/**/*.js",
                 "tests/**/*.js"
             ]
@@ -66,7 +67,7 @@ module.exports = function (grunt) {
                         cwd: "dist/",
                         src: ["*.js"],
                         dest: "dist/",
-                        ext: ".min.js",
+                        ext: ".min.js"
                     }
                 ]
             }
