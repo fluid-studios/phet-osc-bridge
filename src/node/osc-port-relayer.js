@@ -57,7 +57,7 @@ fluid.defaults("phetosc.webSocketPortRelayer", {
         "onCreate.log": {
             "this": "console",
             "method": "log",
-            args: ["Relayer was created"]
+            args: ["A relayer was created."]
         },
         "onInputClose.destroyRelay": "{that}.destroy()",
         "onOutputClose.destroyRelay": "{that}.destroy()",

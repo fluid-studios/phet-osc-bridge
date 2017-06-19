@@ -23,14 +23,26 @@ fluid.require("%phetosc/src/node/osc-port-relayer.js");
 fluid.defaults("phetosc.relayServer", {
     gradeNames: "fluid.component",
 
+    webServerHost: "127.0.0.1",
     webServerPort: 8081,
     remoteAddress: "127.0.0.1",
     remotePort: 57120,
     localAddress: "0.0.0.0",
     localPort: 57121,
 
-    phetPath: __dirname + "/../../examples/",
-    resourcePath: __dirname + "/../../dist/",
+    phetPath: {
+        expander: {
+            funcName: "fluid.module.resolvePath",
+            args: "%phetosc/examples/"
+        }
+    },
+
+    resourcePath: {
+        expander: {
+            funcName: "fluid.module.resolvePath",
+            args: "%phetosc/dist/"
+        }
+    },
 
     members: {
         expressApp: {
@@ -43,7 +55,11 @@ fluid.defaults("phetosc.relayServer", {
         httpServer: {
             expander: {
                 funcName: "phetosc.relayServer.createHTTPServer",
-                args: ["{that}.expressApp", "{that}.options.webServerPort"]
+                args: [
+                    "{that}.expressApp",
+                    "{that}.options.webServerPort",
+                    "{that}.options.webServerHost"
+                ]
             }
         },
 
@@ -101,6 +117,11 @@ fluid.defaults("phetosc.relayServer", {
             args: ["connection", "{that}.events.onConnection.fire"]
         },
 
+        "onCreate.logServerInfo": {
+            funcName: "phetosc.relayServer.logServerInfo",
+            args: ["{that}"]
+        },
+
         "onConnection.log": {
             priority: "first",
             "this": "console",
@@ -127,12 +148,19 @@ phetosc.relayServer.createExpressStaticApp = function (options) {
     return app;
 };
 
-phetosc.relayServer.createHTTPServer = function (app, webServerPort) {
-    return app.listen(webServerPort);
+phetosc.relayServer.createHTTPServer = function (app, webServerPort, webServerHost) {
+    return app.listen(webServerPort, webServerHost);
 };
 
 phetosc.relayServer.createWebSocketServer = function (httpServer) {
     return new WebSocket.Server({
         server: httpServer
     });
+};
+
+phetosc.relayServer.logServerInfo = function (that) {
+    var url = "http://" + that.options.webServerHost + ":" +
+        that.options.webServerPort + "/";
+
+    console.log("PhET OSC Bridge web server mounted at", url);
 };

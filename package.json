@@ -32,7 +32,8 @@
         "osc": "2.2.0",
         "infusion": "3.0.0-dev.20170322T234120Z.278de35",
         "express": "4.15.3",
-        "ws": "3.0.0"
+        "ws": "3.0.0",
+        "gpii-launcher": "1.0.0-dev.20170504T113435Z.c5b7001"
     },
     "scripts": {
         "node-test": "node tests/node-all-tests.js",

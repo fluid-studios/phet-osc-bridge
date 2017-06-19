@@ -19,6 +19,7 @@ fluid.defaults("phetosc.bridge", {
     bundleParameters: true,
     excludeParameters: ["oldValue"],
     phetioIDPatterns: "*",
+    addressMap: {},
 
     invokers: {
         bind: "phetosc.bridge.bind({that}, {arguments}.0)"
@@ -37,6 +38,9 @@ fluid.defaults("phetosc.bridge", {
             options: {
                 bundleParameters: "{bridge}.options.bundleParameters",
                 excludeParameters: "{bridge}.options.excludeParameters",
+                phetioIDPatterns: "{bridge}.options.phetioIDPatterns",
+                addressMap: "{bridge}.options.addressMap",
+
                 components: {
                     filter: "{filter}"
                 }
