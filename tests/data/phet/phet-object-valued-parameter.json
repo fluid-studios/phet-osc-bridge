@@ -1,0 +1,20 @@
+[
+    {
+        "messageIndex": 1,
+        "eventType": "model",
+        "phetioID": "buildAnAtom.atomScreen.model.protons_0.destinationProperty",
+        "componentType": "TProperty",
+        "event": "changed",
+        "time": 1495058789979,
+        "parameters": {
+            "oldValue": {
+                "x": 0,
+                "y": 0
+            },
+            "newValue": {
+                "x": -172,
+                "y": -209
+            }
+        }
+    }
+]

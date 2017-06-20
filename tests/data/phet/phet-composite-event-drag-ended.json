@@ -1,0 +1,169 @@
+[
+    {
+        "messageIndex": 229,
+        "eventType": "user",
+        "phetioID": "buildAnAtom.atomScreen.view.nucleons_9.inputListener",
+        "componentType": "TTandemSimpleDragHandler",
+        "event": "dragEnded",
+        "time": 1495058799750,
+        "children": [
+            {
+                "messageIndex": 230,
+                "eventType": "model",
+                "phetioID": "buildAnAtom.atomScreen.model.protons_9.userControlledProperty",
+                "componentType": "TProperty",
+                "event": "changed",
+                "time": 1495058799751,
+                "parameters": {
+                    "oldValue": true,
+                    "newValue": false
+                },
+                "children": [
+                    {
+                        "messageIndex": 231,
+                        "eventType": "model",
+                        "phetioID": "buildAnAtom.atomScreen.model.particleAtom.protonCountProperty",
+                        "componentType": "TDerivedProperty",
+                        "event": "changed",
+                        "time": 1495058799751,
+                        "parameters": {
+                            "oldValue": 0,
+                            "newValue": 1
+                        },
+                        "children": [
+                            {
+                                "messageIndex": 232,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.model.particleAtom.chargeProperty",
+                                "componentType": "TDerivedProperty",
+                                "event": "changed",
+                                "time": 1495058799751,
+                                "parameters": {
+                                    "oldValue": 0,
+                                    "newValue": 1
+                                },
+                                "children": [
+                                    {
+                                        "messageIndex": 233,
+                                        "eventType": "model",
+                                        "phetioID": "buildAnAtom.atomScreen.view.chargeMeter.readoutText",
+                                        "componentType": "TText",
+                                        "event": "textChanged",
+                                        "time": 1495058799751,
+                                        "parameters": {
+                                            "oldText": "0",
+                                            "newText": "+1"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "messageIndex": 234,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.model.particleAtom.massNumberProperty",
+                                "componentType": "TDerivedProperty",
+                                "event": "changed",
+                                "time": 1495058799752,
+                                "parameters": {
+                                    "oldValue": 0,
+                                    "newValue": 1
+                                },
+                                "children": [
+                                    {
+                                        "messageIndex": 235,
+                                        "eventType": "model",
+                                        "phetioID": "buildAnAtom.atomScreen.view.massNumberDisplay.numericalText",
+                                        "componentType": "TText",
+                                        "event": "textChanged",
+                                        "time": 1495058799752,
+                                        "parameters": {
+                                            "oldText": "0",
+                                            "newText": "1"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "messageIndex": 236,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.model.particleAtom.particleCountProperty",
+                                "componentType": "TDerivedProperty",
+                                "event": "changed",
+                                "time": 1495058799752,
+                                "parameters": {
+                                    "oldValue": 0,
+                                    "newValue": 1
+                                }
+                            },
+                            {
+                                "messageIndex": 237,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.view.atomNode.elementName",
+                                "componentType": "TText",
+                                "event": "textChanged",
+                                "time": 1495058799753,
+                                "parameters": {
+                                    "oldText": "",
+                                    "newText": "‪Hydrogen‬"
+                                }
+                            },
+                            {
+                                "messageIndex": 238,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.view.atomNode.ionIndicator",
+                                "componentType": "TText",
+                                "event": "textChanged",
+                                "time": 1495058799754,
+                                "parameters": {
+                                    "oldText": "",
+                                    "newText": "‪+ Ion‬"
+                                }
+                            },
+                            {
+                                "messageIndex": 239,
+                                "eventType": "model",
+                                "phetioID": "buildAnAtom.atomScreen.view.atomNode.stabilityIndicator",
+                                "componentType": "TText",
+                                "event": "textChanged",
+                                "time": 1495058799754,
+                                "parameters": {
+                                    "oldText": "",
+                                    "newText": "‪Stable‬"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "messageIndex": 240,
+                        "eventType": "model",
+                        "phetioID": "buildAnAtom.atomScreen.model.particleAtom.protons",
+                        "componentType": "TObservableArray",
+                        "event": "itemAdded",
+                        "time": 1495058799756,
+                        "parameters": {
+                            "item": "TParticle"
+                        }
+                    },
+                    {
+                        "messageIndex": 241,
+                        "eventType": "model",
+                        "phetioID": "buildAnAtom.atomScreen.model.protons_9.destinationProperty",
+                        "componentType": "TProperty",
+                        "event": "changed",
+                        "time": 1495058799756,
+                        "parameters": {
+                            "oldValue": {
+                                "x": -9.20000000000003,
+                                "y": -41.360000000000014
+                            },
+                            "newValue": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

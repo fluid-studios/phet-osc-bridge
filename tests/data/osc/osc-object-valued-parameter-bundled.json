@@ -1,0 +1,47 @@
+[
+    {
+        "timeTag": {
+            "raw": [0,0],
+            "native": 0
+        },
+
+        "packets": [
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_0.destinationProperty/model/changed/oldValue/x",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 0
+                    }
+                ]
+            },
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_0.destinationProperty/model/changed/oldValue/y",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": 0
+                    }
+                ]
+            },
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_0.destinationProperty/model/changed/newValue/x",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": -172
+                    }
+                ]
+            },
+            {
+                "address": "/buildAnAtom.atomScreen.model.protons_0.destinationProperty/model/changed/newValue/y",
+                "args": [
+                    {
+                        "type": "d",
+                        "value": -209
+                    }
+                ]
+            }
+        ]
+    }
+]

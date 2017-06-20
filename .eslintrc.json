@@ -1,0 +1,12 @@
+{
+    "extends": "eslint-config-fluid",
+    "globals": {
+        "fluid": true,
+        "phetosc": true
+    },
+
+    "env": {
+        "browser": "true",
+        "node": "true"
+    }
+}
