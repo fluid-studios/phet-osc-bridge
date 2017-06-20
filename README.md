@@ -98,7 +98,7 @@ Open Sound Control message payloads are flat; there is no way to send named para
 
 ### Types of PhET Events
 * User: triggered by a user action
-* Model: a change in the simulation's sate
+* Model: a change in the simulation's state
 
 ### Structure of a PhET Event
 * Events are hierarchical; they can contain ``children`` events that "were triggered while this event was being processed." In this OSC binding, we have flattened the parent/child event structure, treating them as a flat sequence of events.
