@@ -13,9 +13,9 @@
 var fluid = require("infusion");
 
 fluid.require("%gpii-launcher");
-fluid.require("%phetosc/src/js/port.js");
-fluid.require("%phetosc/src/node/osc-port-relayer.js");
-fluid.require("%phetosc/src/node/osc-relay-server.js");
+fluid.require("%phet-osc-bridge/src/js/port.js");
+fluid.require("%phet-osc-bridge/src/node/osc-port-relayer.js");
+fluid.require("%phet-osc-bridge/src/node/osc-relay-server.js");
 
 var phetosc = fluid.registerNamespace("phetosc");
 
@@ -32,7 +32,7 @@ fluid.defaults("phetosc.launcher", {
             localPort: "The local port to which to the OSC outputter should be bound. Defaults to 57121."
         },
         defaults: {
-            "optionsFile": "%phetosc/phet-osc-bridge-config.json"
+            "optionsFile": "%phet-osc-bridge/phet-osc-bridge-config.json"
         }
     }
 });

@@ -13,8 +13,8 @@ var express = require("express"),
     fluid = require("infusion"),
     phetosc = fluid.registerNamespace("phetosc");
 
-fluid.require("%phetosc/src/js/port.js");
-fluid.require("%phetosc/src/node/osc-port-relayer.js");
+fluid.require("%phet-osc-bridge/src/js/port.js");
+fluid.require("%phet-osc-bridge/src/node/osc-port-relayer.js");
 
 // A Relay Server is a combination of:
 // 1. an Express-based Web server that serves up static resources
@@ -33,14 +33,14 @@ fluid.defaults("phetosc.relayServer", {
     phetPath: {
         expander: {
             funcName: "fluid.module.resolvePath",
-            args: "%phetosc/examples/"
+            args: "%phet-osc-bridge/examples/"
         }
     },
 
     resourcePath: {
         expander: {
             funcName: "fluid.module.resolvePath",
-            args: "%phetosc/dist/"
+            args: "%phet-osc-bridge/dist/"
         }
     },
 
