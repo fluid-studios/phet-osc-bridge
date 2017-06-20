@@ -55,7 +55,7 @@ Other configuration options can be specified on the command line. More informati
 The <code>phetosc.bridge</code> component provides a variety of configuration options, which are described in the sections below.
 
 ### Filtering Events
-In many cases, only a subset of events are relevant for a sonification. The <code>phetioIDPatterns</code> option allows you to specify an array of regular expression patterns that will be matched against the <code>phetioID</code> of events. Only those events with a <code>phetioID</code> matching one of the regular expressions specified in <code>phetiodIDPatterns</code> will be converted and sent via OSC (i.e. the patterns are ORed together).
+In many cases, only a subset of events are relevant for a sonification. The <code>phetioIDPatterns</code> option allows you to specify an array of regular expression patterns that will be matched against the <code>phetioID</code> of events. Only those events with a <code>phetioID</code> matching one of the regular expressions specified in <code>phetioIDPatterns</code> will be converted and sent via OSC (i.e. the patterns are ORed together).
 
 #### Example: Listening Only for Particle Count Change Events
 
