@@ -77,7 +77,7 @@ fluid.defaults("phetosc.conversionTester", {
 });
 
 phetosc.conversionTester.loadFile = function (path, onLoaded, onError) {
-    var loader = typeof $ !== "undefined" ? phetosc.conversionTester.browserLoadFile :
+    var loader = fluid.contextAware.isBrowser() ? phetosc.conversionTester.browserLoadFile :
         phetosc.conversionTester.nodeLoadFile;
 
     loader(path, onLoaded, onError);

@@ -15,6 +15,10 @@ var fluid = fluid || require("infusion"),
 fluid.defaults("phetosc.port", {
     gradeNames: "fluid.component",
 
+    // portType can be any osc.js Port constructor name
+    // in string form, e.g. "osc.UDPPort" or "osc.WebSocketPort".
+    // See https://github.com/colinbdclark/osc.js
+    // for more information and examples.
     portType: "fluid.mustBeOverridden",
 
     metadata: true,

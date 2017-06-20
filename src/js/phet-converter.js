@@ -126,18 +126,18 @@ phetosc.converter.parameterToMessages = function (addressPrefix, that, val, key)
 };
 
 phetosc.converter.objectToMessages = function (addressPrefix, that, obj) {
-    if (!obj || Object.keys(obj) < 1) {
+    if (!obj || Object.keys(obj).length === 0) {
         return phetosc.converter.toMessage(addressPrefix, that);
+    } else {
+        var messages = [];
+
+        fluid.each(obj, function (val, key) {
+            var paramMessages = phetosc.converter.parameterToMessages(addressPrefix, that, val, key);
+            messages.push(paramMessages);
+        });
+
+        return fluid.flatten(messages);
     }
-
-    var messages = [];
-
-    fluid.each(obj, function (val, key) {
-        var paramMessages = phetosc.converter.parameterToMessages(addressPrefix, that, val, key);
-        messages.push(paramMessages);
-    });
-
-    return fluid.flatten(messages);
 };
 
 phetosc.converter.messageAddressPrefix = function (phetEvent, that) {

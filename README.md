@@ -31,8 +31,14 @@ The PhET OSC Bridge web server will serve up the required client JavaScript file
 
 Next, you'll need to instantiate the bridge component and bind it to the PhET sim's <code>simIFrameClient</code> object. This will cause all events emitted from the sim to be available across the bridge. Paste this code into the <code>onSimInitialized</code> event handler function that is included in your wrapper's call to <code>simIFrameClient.launchSim()</code>:
 
-    var oscBridge = phetosc.bridge();
-    oscBridge.bind(simIFrameClient);
+    var simIFrameClient = new SimIFrameClient(document.getElementById("sim"));
+
+    simIFrameClient.launchSim(sim.URL, {
+        onSimInitialized: function () {
+            var oscBridge = phetosc.bridge();
+            oscBridge.bind(simIFrameClient);
+        }
+    });
 
 ### Starting the Bridge's Server
 Lastly, you'll need to start the PhET OSC Bridge server. In your terminal, navigate to the directory in which your PhET-iO wrapper files are located, and run:
@@ -49,7 +55,7 @@ Other configuration options can be specified on the command line. More informati
 The <code>phetosc.bridge</code> component provides a variety of configuration options, which are described in the sections below.
 
 ### Filtering Events
-In many cases, only a subset of events are relevant for a sonification. The <code>phetioIDPatterns</code> option allows you to specify an array of regular expression patterns that will be matched against the <code>phetioID</code> of events. Only those events with a <code>phetioID</code> matching the specified list of regular expressions will be sent via OSC.
+In many cases, only a subset of events are relevant for a sonification. The <code>phetioIDPatterns</code> option allows you to specify an array of regular expression patterns that will be matched against the <code>phetioID</code> of events. Only those events with a <code>phetioID</code> matching one of the regular expressions specified in <code>phetiodIDPatterns</code> will be converted and sent via OSC (i.e. the patterns are ORed together).
 
 #### Example: Listening Only for Particle Count Change Events
 

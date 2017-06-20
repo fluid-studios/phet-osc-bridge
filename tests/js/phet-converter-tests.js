@@ -119,19 +119,9 @@ fluid.defaults("phetosc.tests.converter.compositeEvent", {
 fluid.defaults("phetosc.tests.withIDPatterns", {
     gradeNames: "fluid.component",
 
-    components: {
-        converter: {
-            options: {
-                components: {
-                    filter: {
-                        type: "phetosc.eventFilter",
-                        options: {
-                            phetioIDPatterns: "{withIDPatterns}.options.phetioIDPatterns"
-                        }
-                    }
-                }
-            }
-        }
+    distributeOptions: {
+        source: "{that}.options.phetioIDPatterns",
+        target: "{that phetosc.eventFilter}.options.phetioIDPatterns"
     }
 });
 
