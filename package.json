@@ -1,45 +1,45 @@
 {
-    "name": "phet-osc-bridge",
-    "version": "1.0.0",
-    "main": "index.js",
-    "bin": "./index.js",
-    "description": "A bridge between PhET and sound synthesis applications using Open Sound Control",
-    "author": "OCAD University",
-    "homepage": "https://github.com/fluid-studios/phet-osc-bridge",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/fluid-studios/phet-osc-bridge.git"
-    },
-    "bugs": "https://github.com/fluid-studios/phet-osc-bridge/issues",
-    "license": "BSD-3-Clause",
-    "keywords": [
-        "Open Sound Control",
-        "OSC",
-        "sonification",
-        "phet"
-    ],
-    "readmeFilename": "README.md",
-    "devDependencies": {
-        "node-jqunit": "1.1.4",
-        "grunt": "1.0.1",
-        "eslint-config-fluid": "1.0.0",
-        "fluid-grunt-eslint": "18.1.2",
-        "grunt-jsonlint": "1.0.4",
-        "grunt-contrib-clean": "~1.0.0",
-        "grunt-contrib-concat": "~1.0.1",
-        "grunt-contrib-uglify": "~1.0.1"
-    },
-    "dependencies": {
-        "osc": "2.2.0",
-        "infusion": "3.0.0-dev.20170322T234120Z.278de35",
-        "express": "4.15.3",
-        "ws": "3.0.0",
-        "gpii-launcher": "1.0.0-dev.20170504T113435Z.c5b7001"
-    },
-    "scripts": {
-        "node-test": "node tests/node-all-tests.js",
-        "browser-test": "testem ci --file tests/testem.json",
-        "test": "npm run node-test && npm run browser-test",
-        "prepublish": "grunt"
-    }
+  "name": "phet-osc-bridge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "./index.js",
+  "description": "A bridge between PhET and sound synthesis applications using Open Sound Control",
+  "author": "OCAD University",
+  "homepage": "https://github.com/fluid-studios/phet-osc-bridge",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fluid-studios/phet-osc-bridge.git"
+  },
+  "bugs": "https://github.com/fluid-studios/phet-osc-bridge/issues",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "Open Sound Control",
+    "OSC",
+    "sonification",
+    "phet"
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "node-jqunit": "1.1.4",
+    "grunt": "1.0.1",
+    "eslint-config-fluid": "1.0.0",
+    "fluid-grunt-eslint": "18.1.2",
+    "grunt-jsonlint": "1.0.4",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-concat": "~1.0.1",
+    "grunt-contrib-uglify": "~1.0.1"
+  },
+  "dependencies": {
+    "osc": "2.2.0",
+    "infusion": "3.0.0-dev.20170322T234120Z.278de35",
+    "express": "4.15.3",
+    "ws": "3.3.1",
+    "gpii-launcher": "1.0.0-dev.20170504T113435Z.c5b7001"
+  },
+  "scripts": {
+    "node-test": "node tests/node-all-tests.js",
+    "browser-test": "testem ci --file tests/testem.json",
+    "test": "npm run node-test && npm run browser-test",
+    "prepublish": "grunt"
+  }
 }
