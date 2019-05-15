@@ -1,6 +1,6 @@
 {
     "name": "phet-osc-bridge",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "index.js",
     "bin": "./index.js",
     "description": "A bridge between PhET and sound synthesis applications using Open Sound Control",
@@ -21,24 +21,25 @@
     "readmeFilename": "README.md",
     "devDependencies": {
         "node-jqunit": "1.1.8",
-        "grunt": "1.0.3",
+        "grunt": "1.0.4",
         "eslint-config-fluid": "1.3.0",
         "fluid-grunt-eslint": "18.1.2",
         "grunt-jsonlint": "1.1.0",
-        "grunt-contrib-clean": "1.1.0",
+        "grunt-contrib-clean": "2.0.0",
         "grunt-contrib-concat": "1.0.1",
-        "grunt-contrib-uglify": "3.3.0"
+        "grunt-contrib-uglify": "4.0.1",
+        "testem": "2.16.0"
     },
     "dependencies": {
-        "osc": "2.2.3",
-        "infusion": "3.0.0-dev.20180326T173646Z.8c6a109b1",
-        "express": "4.16.3",
-        "ws": "5.2.0",
+        "osc": "2.3.0",
+        "infusion": "3.0.0-dev.20190328T144119Z.ec44dbfab",
+        "express": "4.16.4",
+        "ws": "7.0.0",
         "gpii-launcher": "1.0.0-dev.20180305T114318Z.39049a4"
     },
     "scripts": {
         "node-test": "node tests/node-all-tests.js",
-        "browser-test": "testem ci --file tests/testem.json",
+        "browser-test": "node_modules/.bin/testem ci --file tests/testem.json",
         "test": "npm run node-test && npm run browser-test",
         "prepublish": "grunt"
     }
